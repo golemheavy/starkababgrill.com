@@ -6,6 +6,11 @@
 	max-width: 1260px;
 }
 
+body > main > div.container {
+	padding-top: 2rem;
+}
+
+
 .footer {
   background-color: #f5f5f5;
   text-align: center;
