@@ -6,6 +6,20 @@ body {
 	background-attachment: fixed;
 }
 
+header {
+	background-color: #00376ecc;
+}
+
+.nav-item {
+	font-size:1.2rem;
+}
+
+.maincol {
+	flex-grow:unset;
+	flex-basis:unset;
+	margin: 0 auto;
+}
+
 .col-lg-3, .col-md-4, .col-sm-6, .col-xs-12 {
 	padding: 0px 10px;
 }
