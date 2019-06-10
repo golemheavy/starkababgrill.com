@@ -14,10 +14,20 @@ header {
 	font-size:1.2rem;
 }
 
+body > header > div > nav > a > img {
+	width: 220px;
+	height: auto;
+}
+
 .maincol {
 	flex-grow:unset;
 	flex-basis:unset;
 	margin: 0 auto;
+}
+
+.mt-5 {
+	margin-top: 1rem;
+	text-align: center;
 }
 
 .col-lg-3, .col-md-4, .col-sm-6, .col-xs-12 {
