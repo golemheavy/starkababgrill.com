@@ -1,0 +1,26 @@
+.item-style {
+	text-align: left;
+	margin-left: 15px;
+	padding-right: 0;
+}
+
+.price-style {
+	text-align:right;
+	margin-right: 15px;
+	padding-left: 0;
+}
+
+.spicy-item {
+	font-weight: bold;
+	color: red;
+}
+
+.menu-card {
+	text-align: center;
+	padding-top: 10px;
+	margin-bottom:10px;
+}
+
+.menu-category-image {
+	width: 85%;
+}
