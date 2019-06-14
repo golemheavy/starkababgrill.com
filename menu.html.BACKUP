@@ -121,40 +121,32 @@
 						<div class="card menu-card">
 							<div class="row">
 								<div class="col">
-									<p><h5 class="card-title" id="flavor-text">Rolls & Buns</h5></p>
+									<p><h5 class="card-title" id="flavor-text">Rice & Breads</h5></p>
 									<figure>
-										<img src="./assets/images/ChickenBotiRoll.jpg" alt="Chicken Boti Roll" class="menu-category-image">
-										<figcaption><em>Chicken Boti Roll</em></figcaption>
+										<img src="./assets/images/GoatBiryani.jpg" alt="Goat Biryani" class="menu-category-image">
+										<figcaption><em>Goat Biryani</em></figcaption>
 									</figure>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-8 col-auto item-style">
-									<p>Bun Kabab (Chicken, Beef, or Veg.)</p>
+									<p>Rice</p>
 								</div>
 								<div class="col col-mr-auto price-style">
-									<p>6.99</p>
+									<p>3.99</p>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-8 col-auto item-style">
-									<p>Chicken Boti Roll</p>
+									<p>Vegetable Biryani</p>
 								</div>
 								<div class="col col-mr-auto price-style">
-									<p>6.99</p>
+									<p>10.99</p>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-8 col-auto item-style">
-									<p>Seekh Kabab Roll (Chicken or Beef)</p>
-								</div>
-								<div class="col col-mr-auto price-style">
-									<p>7.99</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-8 col-auto item-style">
-									<p>Bihari Kabab Roll</p>
+									<p>Chicken Biryani</p>
 								</div>
 								<div class="col col-mr-auto price-style">
 									<p>9.99</p>
@@ -162,80 +154,164 @@
 							</div>
 							<div class="row">
 								<div class="col-8 col-auto item-style">
-									<p>Paneer Tikka Roll</p>
+									<p>Boneless Chicken Biryani</p>
 								</div>
 								<div class="col col-mr-auto price-style">
-									<p>8.99</p>
+									<p>12.99</p>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-8 col-auto item-style">
-									<p>Chicken Franki</p>
+									<p>Goat Biryani</p>
 								</div>
 								<div class="col col-mr-auto price-style">
-									<p>7.99</p>
+									<p>12.99</p>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-8 col-auto item-style">
-									<p>Paneer Franki</p>
+									<p>Shrimp Biryani</p>
 								</div>
 								<div class="col col-mr-auto price-style">
-									<p>7.99</p>
+									<p>14.99</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-8 col-auto item-style">
+									<p>Paneer Biryani</p>
+								</div>
+								<div class="col col-mr-auto price-style">
+									<p>12.99</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-8 col-auto item-style">
+									<p>Onion Naan</p>
+								</div>
+								<div class="col col-mr-auto price-style">
+									<p>2.99</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-8 col-auto item-style">
+									<p>Garlic Naan</p>
+								</div>
+								<div class="col col-mr-auto price-style">
+									<p>3.99</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-8 col-auto item-style">
+									<p>Keema Naan</p>
+								</div>
+								<div class="col col-mr-auto price-style">
+									<p>4.99</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-8 col-auto item-style">
+									<p>Paratha</p>
+								</div>
+								<div class="col col-mr-auto price-style">
+									<p>2.49</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-8 col-auto item-style">
+									<p>Naan</p>
+								</div>
+								<div class="col col-mr-auto price-style">
+									<p>1.79</p>
 								</div>
 							</div>
 						</div>
 						<div class="card menu-card">
 							<div class="row">
 								<div class="col">
-									<p><h5 class="card-title" id="flavor-text">Wings</h5></p>
-									<figure>
-										<img src="./assets/images/PriyankasMasalaWings.jpg" class="menu-category-image">
-										<figcaption><em>Priyanka's Masala Wings</em></figcaption>
-									</figure>
+									<p><h5 class="card-title" id="flavor-text">Beverages</h5></p>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-8 col-auto item-style">
-									<p>Salman Khan</p>
+									<p>Can of Soda</p>
 								</div>
 								<div class="col col-mr-auto price-style">
-									<p>8.99</p>
+									<p>1.89</p>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-8 col-auto item-style">
-									<p>Shahrukh Khan</p>
+									<p>Pakola</p>
 								</div>
 								<div class="col col-mr-auto price-style">
-									<p>8.99</p>
+									<p>1.99</p>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-8 col-auto item-style">
-									<p>Govinda</p>
+									<p>Iced Tea</p>
 								</div>
 								<div class="col col-mr-auto price-style">
-									<p>8.99</p>
+									<p>1.99</p>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-8 col-auto item-style">
-									<p>Priyanka's Masala Wings</p>
+									<p>Lemonade</p>
 								</div>
 								<div class="col col-mr-auto price-style">
-									<p>8.99</p>
+									<p>2.89</p>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-8 col-auto item-style">
-									<p>Chef's Special</p>
+									<p>Sweet Lassi</p>
 								</div>
 								<div class="col col-mr-auto price-style">
-									<p>8.99</p>
+									<p>3.99</p>
 								</div>
 							</div>
-						</div>						
+							<div class="row">
+								<div class="col-8 col-auto item-style">
+									<p>Salt Lassi</p>
+								</div>
+								<div class="col col-mr-auto price-style">
+									<p>3.99</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-8 col-auto item-style">
+									<p>Mango Lassi</p>
+								</div>
+								<div class="col col-mr-auto price-style">
+									<p>3.99</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-8 col-auto item-style">
+									<p>Mango Shake</p>
+								</div>
+								<div class="col col-mr-auto price-style">
+									<p>3.99</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-8 col-auto item-style">
+									<p>Chai</p>
+								</div>
+								<div class="col col-mr-auto price-style">
+									<p>1.99</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-8 col-auto item-style">
+									<p>Bottle of Soda</p>
+								</div>
+								<div class="col col-mr-auto price-style">
+									<p>2.99</p>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
 						<div class="card menu-card">
@@ -420,66 +496,54 @@
 						<div class="card menu-card">
 							<div class="row">
 								<div class="col">
-									<p><h5 class="card-title" id="flavor-text">Burger Mania</h5></p>
+									<p><h5 class="card-title" id="flavor-text">Wings</h5></p>
+									<figure>
+										<img src="./assets/images/PriyankasMasalaWings.jpg" class="menu-category-image">
+										<figcaption><em>Priyanka's Masala Wings</em></figcaption>
+									</figure>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-8 col-auto item-style">
-									<p>Cheeseburger</p>
+									<p>Salman Khan</p>
 								</div>
 								<div class="col col-mr-auto price-style">
-									<p>6.99</p>
+									<p>8.99</p>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-8 col-auto item-style">
-									<p>Hot Mess</p>
+									<p>Shahrukh Khan</p>
 								</div>
 								<div class="col col-mr-auto price-style">
-									<p>6.99</p>
+									<p>8.99</p>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-8 col-auto item-style">
-									<p>Mushroom Swiss</p>
+									<p>Govinda</p>
 								</div>
 								<div class="col col-mr-auto price-style">
-									<p>6.99</p>
+									<p>8.99</p>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-8 col-auto item-style">
-									<p>Double Double</p>
+									<p>Priyanka's Masala Wings</p>
 								</div>
 								<div class="col col-mr-auto price-style">
-									<p>7.99</p>
+									<p>8.99</p>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-8 col-auto item-style">
-									<p>Hawaiian Burger</p>
+									<p>Chef's Special</p>
 								</div>
 								<div class="col col-mr-auto price-style">
-									<p>6.99</p>
+									<p>8.99</p>
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-8 col-auto item-style">
-									<p>Inferno</p>
-								</div>
-								<div class="col col-mr-auto price-style">
-									<p>6.99</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-8 col-auto item-style">
-									<p>Chicken Ranch Sandwich</p>
-								</div>
-								<div class="col col-mr-auto price-style">
-									<p>6.99</p>
-								</div>
-							</div>
-						</div>						
+						</div>
 					</div>
 					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
 						<div class="card menu-card">
@@ -658,23 +722,7 @@
 						<div class="card menu-card">
 							<div class="row">
 								<div class="col">
-									<p><h5 class="card-title" id="flavor-text">Kids' Menu</h5></p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-8 col-auto item-style">
-									<p>Chicken Strips</p>
-								</div>
-								<div class="col col-mr-auto price-style">
-									<p>5.99</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-8 col-auto item-style">
-									<p>Chicken Ranch</p>
-								</div>
-								<div class="col col-mr-auto price-style">
-									<p>5.99</p>
+									<p><h5 class="card-title" id="flavor-text">Burger Mania</h5></p>
 								</div>
 							</div>
 							<div class="row">
@@ -682,49 +730,97 @@
 									<p>Cheeseburger</p>
 								</div>
 								<div class="col col-mr-auto price-style">
-									<p>5.99</p>
+									<p>6.99</p>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-8 col-auto item-style">
-									<p>Grilled Cheese</p>
+									<p>Hot Mess</p>
 								</div>
 								<div class="col col-mr-auto price-style">
-									<p>5.99</p>
+									<p>6.99</p>
 								</div>
 							</div>
-						</div>						
+							<div class="row">
+								<div class="col-8 col-auto item-style">
+									<p>Mushroom Swiss</p>
+								</div>
+								<div class="col col-mr-auto price-style">
+									<p>6.99</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-8 col-auto item-style">
+									<p>Double Double</p>
+								</div>
+								<div class="col col-mr-auto price-style">
+									<p>7.99</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-8 col-auto item-style">
+									<p>Hawaiian Burger</p>
+								</div>
+								<div class="col col-mr-auto price-style">
+									<p>6.99</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-8 col-auto item-style">
+									<p>Inferno</p>
+								</div>
+								<div class="col col-mr-auto price-style">
+									<p>6.99</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-8 col-auto item-style">
+									<p>Chicken Ranch Sandwich</p>
+								</div>
+								<div class="col col-mr-auto price-style">
+									<p>6.99</p>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
 						<div class="card menu-card">
 							<div class="row">
 								<div class="col">
-									<p><h5 class="card-title" id="flavor-text">Rice & Breads</h5></p>
+									<p><h5 class="card-title" id="flavor-text">Rolls & Buns</h5></p>
 									<figure>
-										<img src="./assets/images/GoatBiryani.jpg" alt="Goat Biryani" class="menu-category-image">
-										<figcaption><em>Goat Biryani</em></figcaption>
+										<img src="./assets/images/ChickenBotiRoll.jpg" alt="Chicken Boti Roll" class="menu-category-image">
+										<figcaption><em>Chicken Boti Roll</em></figcaption>
 									</figure>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-8 col-auto item-style">
-									<p>Rice</p>
+									<p>Bun Kabab (Chicken, Beef, or Veg.)</p>
 								</div>
 								<div class="col col-mr-auto price-style">
-									<p>3.99</p>
+									<p>6.99</p>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-8 col-auto item-style">
-									<p>Vegetable Biryani</p>
+									<p>Chicken Boti Roll</p>
 								</div>
 								<div class="col col-mr-auto price-style">
-									<p>10.99</p>
+									<p>6.99</p>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-8 col-auto item-style">
-									<p>Chicken Biryani</p>
+									<p>Seekh Kabab Roll (Chicken or Beef)</p>
+								</div>
+								<div class="col col-mr-auto price-style">
+									<p>7.99</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-8 col-auto item-style">
+									<p>Bihari Kabab Roll</p>
 								</div>
 								<div class="col col-mr-auto price-style">
 									<p>9.99</p>
@@ -732,74 +828,26 @@
 							</div>
 							<div class="row">
 								<div class="col-8 col-auto item-style">
-									<p>Boneless Chicken Biryani</p>
+									<p>Paneer Tikka Roll</p>
 								</div>
 								<div class="col col-mr-auto price-style">
-									<p>12.99</p>
+									<p>8.99</p>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-8 col-auto item-style">
-									<p>Goat Biryani</p>
+									<p>Chicken Franki</p>
 								</div>
 								<div class="col col-mr-auto price-style">
-									<p>12.99</p>
+									<p>7.99</p>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-8 col-auto item-style">
-									<p>Shrimp Biryani</p>
+									<p>Paneer Franki</p>
 								</div>
 								<div class="col col-mr-auto price-style">
-									<p>14.99</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-8 col-auto item-style">
-									<p>Paneer Biryani</p>
-								</div>
-								<div class="col col-mr-auto price-style">
-									<p>12.99</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-8 col-auto item-style">
-									<p>Onion Naan</p>
-								</div>
-								<div class="col col-mr-auto price-style">
-									<p>2.99</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-8 col-auto item-style">
-									<p>Garlic Naan</p>
-								</div>
-								<div class="col col-mr-auto price-style">
-									<p>3.99</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-8 col-auto item-style">
-									<p>Keema Naan</p>
-								</div>
-								<div class="col col-mr-auto price-style">
-									<p>4.99</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-8 col-auto item-style">
-									<p>Paratha</p>
-								</div>
-								<div class="col col-mr-auto price-style">
-									<p>2.49</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-8 col-auto item-style">
-									<p>Naan</p>
-								</div>
-								<div class="col col-mr-auto price-style">
-									<p>1.79</p>
+									<p>7.99</p>
 								</div>
 							</div>
 						</div>
@@ -853,90 +901,42 @@
 						<div class="card menu-card">
 							<div class="row">
 								<div class="col">
-									<p><h5 class="card-title" id="flavor-text">Beverages</h5></p>
+									<p><h5 class="card-title" id="flavor-text">Kids' Menu</h5></p>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-8 col-auto item-style">
-									<p>Can of Soda</p>
+									<p>Chicken Strips</p>
 								</div>
 								<div class="col col-mr-auto price-style">
-									<p>1.89</p>
+									<p>5.99</p>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-8 col-auto item-style">
-									<p>Pakola</p>
+									<p>Chicken Ranch</p>
 								</div>
 								<div class="col col-mr-auto price-style">
-									<p>1.99</p>
+									<p>5.99</p>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-8 col-auto item-style">
-									<p>Iced Tea</p>
+									<p>Cheeseburger</p>
 								</div>
 								<div class="col col-mr-auto price-style">
-									<p>1.99</p>
+									<p>5.99</p>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-8 col-auto item-style">
-									<p>Lemonade</p>
+									<p>Grilled Cheese</p>
 								</div>
 								<div class="col col-mr-auto price-style">
-									<p>2.89</p>
+									<p>5.99</p>
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-8 col-auto item-style">
-									<p>Sweet Lassi</p>
-								</div>
-								<div class="col col-mr-auto price-style">
-									<p>3.99</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-8 col-auto item-style">
-									<p>Salt Lassi</p>
-								</div>
-								<div class="col col-mr-auto price-style">
-									<p>3.99</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-8 col-auto item-style">
-									<p>Mango Lassi</p>
-								</div>
-								<div class="col col-mr-auto price-style">
-									<p>3.99</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-8 col-auto item-style">
-									<p>Mango Shake</p>
-								</div>
-								<div class="col col-mr-auto price-style">
-									<p>3.99</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-8 col-auto item-style">
-									<p>Chai</p>
-								</div>
-								<div class="col col-mr-auto price-style">
-									<p>1.99</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-8 col-auto item-style">
-									<p>Bottle of Soda</p>
-								</div>
-								<div class="col col-mr-auto price-style">
-									<p>2.99</p>
-								</div>
-							</div>
-						</div>					
+						</div>
 						<div class="card menu-card">
 							<div class="row">
 								<div class="col">
