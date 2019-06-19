@@ -8,7 +8,7 @@
 		<!-- Menu Data -->
 		<script src="./assets/data/appetizers.js"></script>
 		<script src="./assets/data/beverages.js"></script>
-		<script src="./assets/data/burgerMania.js*.js"></script>
+		<script src="./assets/data/burgerMania.js"></script>
 		<script src="./assets/data/desserts.js"></script>
 		<script src="./assets/data/entrees.js"></script>
 		<script src="./assets/data/kababsAndGrill.js"></script>
@@ -71,10 +71,9 @@
 		</div>
 		<main role="main" class="flex-shrink-0">
 			<div class="container padtop">
-				<div class="row">
+				<div class="row" id="insert-here">
 				
-				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-				
+					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
 						<div class="card menu-card">
 							<div class="row">
 								<div class="col">
@@ -92,6 +91,32 @@
 							<div class="row">
 								<div class="col-8 col-auto item-style">
 									<p>Gulab Jamun</p>
+								</div>
+								<div class="col col-mr-auto price-style">
+									<p>3.99</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<div class="card menu-card">
+							<div class="row">
+								<div class="col">
+									<p><h5 class="card-title" id="flavor-text">Test Category</h5></p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-8 col-auto item-style">
+									<p>testing</p>
+								</div>
+								<div class="col col-mr-auto price-style">
+									<p>3.99</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-8 col-auto item-style">
+									<p>test item</p>
 								</div>
 								<div class="col col-mr-auto price-style">
 									<p>3.99</p>
@@ -122,5 +147,27 @@
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script>
+		const sections = [
+			appetizers,
+			beverages,
+			burgerMania,
+			desserts,
+			entrees,
+			kababsAndGrill,
+			kidsMenu,
+			riceAndBreads,
+			rollsAndBuns,
+			sides,
+			wings
+		];
+		
+		for (let x in sections) {
+			
+			for (let y in sections[x]) {
+				console.log(sections[x][y]);
+			}
+		}
+		</script>
 	</body>
 </html>
