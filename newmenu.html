@@ -72,60 +72,6 @@
 		<main role="main" class="flex-shrink-0">
 			<div class="container padtop">
 				<div class="row" id="insert-here">
-				
-					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-						<div class="card menu-card">
-							<div class="row">
-								<div class="col">
-									<p><h5 class="card-title" id="flavor-text">Desserts</h5></p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-8 col-auto item-style">
-									<p>Kheer</p>
-								</div>
-								<div class="col col-mr-auto price-style">
-									<p>3.99</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-8 col-auto item-style">
-									<p>Gulab Jamun</p>
-								</div>
-								<div class="col col-mr-auto price-style">
-									<p>3.99</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-						<div class="card menu-card">
-							<div class="row">
-								<div class="col">
-									<p><h5 class="card-title" id="flavor-text">Test Category</h5></p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-8 col-auto item-style">
-									<p>testing</p>
-								</div>
-								<div class="col col-mr-auto price-style">
-									<p>3.99</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-8 col-auto item-style">
-									<p>test item</p>
-								</div>
-								<div class="col col-mr-auto price-style">
-									<p>3.99</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					
 				</div>
 			</div>
 		</main>
@@ -150,11 +96,12 @@
 		<script>
 		const sections = [
 			{name:"Appetizers",items:appetizers},
+			{name:"Kababs & Grill",items:kababsAndGrill},
+			{name:"Entrees",items:entrees},
+			{name:"Rice & Breads",items:riceAndBreads},
 			{name:"Beverages",items:beverages},
 			{name:"Burger Mania",items:burgerMania},
 			{name:"Desserts",items:desserts},
-			{name:"Entrees",items:entrees},
-			{name:"Kababs & Grill",items:kababsAndGrill},
 			{name:"Kids' Menu",items:kidsMenu},
 			{name:"Rice & Breads",items:riceAndBreads},
 			{name:"Rolls & Buns",items:rollsAndBuns},
@@ -168,19 +115,30 @@
 					
 			let z = document.createElement('div'); // is a node
 			z.classList.add("col-lg-3","col-md-4","col-sm-6","col-xs-12");
-			z.innerHTML = `<div class="card menu-card">
+			z.innerHTML = `<div class="card menu-card" id="${sections[x].name}">
 								<div class="row">
 									<div class="col">
-										<p><h5 class="card-title" id="${sections[x].name}">${sections[x].name}</h5></p>
+										<p><h5 class="card-title">${sections[x].name}</h5></p>
 									</div>
 								</div>
 							</div>`;
 			nodeVar.appendChild(z);
 			
 			
-//			for (let y in sections[x]) {
-//				console.log(sections[x][y]);
-//			}
+			for (let y in sections[x].items) {
+			let sectionNode = document.getElementById(sections[x].name);
+			let item = document.createElement('row'); // is a node
+			item.innerHTML = `	<div class="row">
+									<div class="col-8 col-auto item-style">
+										<p>${sections[x].items[y].name}</p>
+									</div>
+									<div class="col col-mr-auto price-style">
+										<p>${sections[x].items[y].price}</p>
+									</div>
+								</div>
+			`;
+			sectionNode.appendChild(item);
+			}
 		}
 		</script>
 	</body>
