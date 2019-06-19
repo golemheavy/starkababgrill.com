@@ -149,24 +149,35 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<script>
 		const sections = [
-			appetizers,
-			beverages,
-			burgerMania,
-			desserts,
-			entrees,
-			kababsAndGrill,
-			kidsMenu,
-			riceAndBreads,
-			rollsAndBuns,
-			sides,
-			wings
+			{name:"appetizers",items:appetizers},
+			{name:"beverages",items:beverages},
+			{name:"burgerMania",items:burgerMania},
+			{name:"desserts",items:desserts},
+			{name:"entrees",items:entrees},
+			{name:"kababsAndGrill",items:kababsAndGrill},
+			{name:"kidsMenu",items:kidsMenu},
+			{name:"riceAndBreads",items:riceAndBreads},
+			{name:"rollsAndBuns",items:rollsAndBuns},
+			{name:"sides",items:sides},
+			{name:"wings",items:wings}
 		];
 		
 		for (let x in sections) {
 			
-			for (let y in sections[x]) {
-				console.log(sections[x][y]);
-			}
+			let nodeVar = document.getElementById("insert-here");
+			
+			var z = document.createElement('section'); // is a node
+			z.innerHTML = `<div class="col">
+								<div class="card menu-card">
+									<p>${sections[x].name}</p>
+								</div>
+							</div>`;
+			nodeVar.appendChild(z);
+			
+			
+//			for (let y in sections[x]) {
+//				console.log(sections[x][y]);
+//			}
 		}
 		</script>
 	</body>
