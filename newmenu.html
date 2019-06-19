@@ -149,27 +149,30 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<script>
 		const sections = [
-			{name:"appetizers",items:appetizers},
-			{name:"beverages",items:beverages},
-			{name:"burgerMania",items:burgerMania},
-			{name:"desserts",items:desserts},
-			{name:"entrees",items:entrees},
-			{name:"kababsAndGrill",items:kababsAndGrill},
-			{name:"kidsMenu",items:kidsMenu},
-			{name:"riceAndBreads",items:riceAndBreads},
-			{name:"rollsAndBuns",items:rollsAndBuns},
-			{name:"sides",items:sides},
-			{name:"wings",items:wings}
+			{name:"Appetizers",items:appetizers},
+			{name:"Beverages",items:beverages},
+			{name:"Burger Mania",items:burgerMania},
+			{name:"Desserts",items:desserts},
+			{name:"Entrees",items:entrees},
+			{name:"Kababs & Grill",items:kababsAndGrill},
+			{name:"Kids' Menu",items:kidsMenu},
+			{name:"Rice & Breads",items:riceAndBreads},
+			{name:"Rolls & Buns",items:rollsAndBuns},
+			{name:"Sides",items:sides},
+			{name:"Wings",items:wings}
 		];
 		
 		for (let x in sections) {
 			
 			let nodeVar = document.getElementById("insert-here");
-			
-			var z = document.createElement('section'); // is a node
-			z.innerHTML = `<div class="col">
-								<div class="card menu-card">
-									<p>${sections[x].name}</p>
+					
+			let z = document.createElement('div'); // is a node
+			z.classList.add("col-lg-3","col-md-4","col-sm-6","col-xs-12");
+			z.innerHTML = `<div class="card menu-card">
+								<div class="row">
+									<div class="col">
+										<p><h5 class="card-title" id="${sections[x].name}">${sections[x].name}</h5></p>
+									</div>
 								</div>
 							</div>`;
 			nodeVar.appendChild(z);
