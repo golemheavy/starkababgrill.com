@@ -101,15 +101,24 @@
 			{
 				name:"Appetizers",
 				items:appetizers,
-				image:"./assets/images/Chicken65.jpg"
+				image: {
+					url:"./assets/images/Chicken65.jpg",
+					alt:"Chicken 65"
+				}
 			},{
 				name:"Rolls & Buns",
 				items:rollsAndBuns,
-				image:"./assets/images/ChickenBotiRoll.jpg"
+				image: {
+					url:"./assets/images/ChickenBotiRoll.jpg",
+					alt:"Chicken Boti Roll"
+				}
 			},{
 				name:"Wings",
 				items:wings,
-				image:"./assets/images/PriyankasMasalaWings.jpg"
+				image: {
+					url:"./assets/images/PriyankasMasalaWings.jpg",
+					alt:"Priyanka's Masala Wings"
+				}
 			}
 		]);
 		
@@ -117,7 +126,10 @@
 			{
 				name:"Kababs & Grill",
 				items:kababsAndGrill,
-				image:"./assets/images/MasalaBotiChicken.jpg"
+				image: {
+					url:"./assets/images/MasalaBotiChicken.jpg",
+					alt:"Masala Boti Chicken"
+				}
 			},{
 				name:"Burger Mania",
 				items:burgerMania
@@ -128,11 +140,17 @@
 			{
 				name:"Non-Vegetarian Entrees",
 				items:entrees,
-				image:"./assets/images/ButterChicken.jpg"
+				image: {
+					url:"./assets/images/ButterChicken.jpg",
+					alt:"Butter Chicken"
+				}
 			},{
 				name:"Vegetarian Entrees",
 				items:vegetarianEntrees,
-				image:"./assets/images/TarkaDaal.jpg"
+				image: {
+					url:"./assets/images/TarkaDaal.jpg",
+					alt:"Tarka Daal"
+				}
 			},{
 				name:"Kids' Menu",
 				items:kidsMenu
@@ -143,7 +161,10 @@
 			{
 				name:"Rice & Breads",
 				items:riceAndBreads,
-				image:"./assets/images/GoatBiryani.jpg"
+				image: {
+					url:"./assets/images/GoatBiryani.jpg",
+					alt:"Goat Biryani"
+				}
 			},{
 				name:"Sides",
 				items:sides
@@ -182,7 +203,7 @@
 			if (typeof colArr[x].image !== "undefined") {
 				let image = document.createElement('figure');
 				
-				image.innerHTML = `<img src=${colArr[x].image} alt="Chicken Boti Roll" class="menu-category-image"><figcaption><em>Chicken Boti Roll</em></figcaption>`;
+				image.innerHTML = `<img src=${colArr[x].image.url} alt=${colArr[x].image.alt} class="menu-category-image"><figcaption><em>${colArr[x].image.alt}</em></figcaption>`;
 				imageNode.appendChild(image);
 			}
 			
