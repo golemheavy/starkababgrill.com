@@ -11,6 +11,7 @@
 		<script src="./assets/data/burgerMania.js"></script>
 		<script src="./assets/data/desserts.js"></script>
 		<script src="./assets/data/entrees.js"></script>
+		<script src="./assets/data/vegetarianEntrees.js"></script>
 		<script src="./assets/data/kababsAndGrill.js"></script>
 		<script src="./assets/data/kidsMenu.js"></script>
 		<script src="./assets/data/riceAndBreads.js"></script>
@@ -95,39 +96,79 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<script>
 		const sections = [
-			{name:"Appetizers",items:appetizers},
-			{name:"Kababs & Grill",items:kababsAndGrill},
-			{name:"Entrees",items:entrees},
-			{name:"Rice & Breads",items:riceAndBreads},
-			{name:"Beverages",items:beverages},
-			{name:"Burger Mania",items:burgerMania},
-			{name:"Desserts",items:desserts},
-			{name:"Kids' Menu",items:kidsMenu},
-			{name:"Rice & Breads",items:riceAndBreads},
-			{name:"Rolls & Buns",items:rollsAndBuns},
-			{name:"Sides",items:sides},
-			{name:"Wings",items:wings}
+			{
+				name:"Appetizers",
+				items:appetizers,
+				image:"./assets/images/ChickenBotiRoll.jpg"
+			},{
+				name:"Kababs & Grill",
+				items:kababsAndGrill,
+				image:"./assets/images/ChickenBotiRoll.jpg"
+			},{
+				name:"Non-Vegetarian Entrees",
+				items:entrees,
+				image:"./assets/images/ChickenBotiRoll.jpg"
+			},{
+				name:"Rice & Breads",
+				items:riceAndBreads,
+				image:"./assets/images/ChickenBotiRoll.jpg"
+			},{
+				name:"Beverages",
+				items:beverages
+			},{
+				name:"Burger Mania",
+				items:burgerMania
+			},{
+				name:"Desserts",
+				items:desserts
+			},{
+				name:"Kids' Menu",
+				items:kidsMenu
+			},{
+				name:"Vegetarian Entrees",
+				items:vegetarianEntrees,
+				image:"./assets/images/ChickenBotiRoll.jpg"
+			},{
+				name:"Rolls & Buns",
+				items:rollsAndBuns,
+				image:"./assets/images/ChickenBotiRoll.jpg"
+			},{
+				name:"Sides",
+				items:sides
+			},{
+				name:"Wings",
+				items:wings,
+				image:"./assets/images/ChickenBotiRoll.jpg"
+			}
 		];
 		
 		for (let x in sections) {
 			
 			let nodeVar = document.getElementById("insert-here");
 					
-			let z = document.createElement('div'); // is a node
+			let z = document.createElement('div');
 			z.classList.add("col-lg-3","col-md-4","col-sm-6","col-xs-12");
 			z.innerHTML = `<div class="card menu-card" id="${sections[x].name}">
-								<div class="row">
+								<div class="row" id="${sections[x].name}-image">
 									<div class="col">
-										<p><h5 class="card-title">${sections[x].name}</h5></p>
+										<h5 class="card-title">${sections[x].name}</h5>
 									</div>
 								</div>
 							</div>`;
 			nodeVar.appendChild(z);
+			let imageNode = document.getElementById(sections[x].name+"-image");
+			
+			if (typeof sections[x].image !== "undefined") {
+				let image = document.createElement('figure');
+				
+				image.innerHTML = `<img src="./assets/images/ChickenBotiRoll.jpg" alt="Chicken Boti Roll" class="menu-category-image"><figcaption><em>Chicken Boti Roll</em></figcaption>`;
+				imageNode.appendChild(image);
+			}
 			
 			
 			for (let y in sections[x].items) {
 			let sectionNode = document.getElementById(sections[x].name);
-			let item = document.createElement('row'); // is a node
+			let item = document.createElement('div');
 			item.innerHTML = `	<div class="row">
 									<div class="col-8 col-auto item-style">
 										<p>${sections[x].items[y].name}</p>
