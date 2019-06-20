@@ -99,19 +99,19 @@
 			{
 				name:"Appetizers",
 				items:appetizers,
-				image:"./assets/images/ChickenBotiRoll.jpg"
+				image:"./assets/images/Chicken65.jpg"
 			},{
 				name:"Kababs & Grill",
 				items:kababsAndGrill,
-				image:"./assets/images/ChickenBotiRoll.jpg"
+				image:"./assets/images/MasalaBotiChicken.jpg"
 			},{
 				name:"Non-Vegetarian Entrees",
 				items:entrees,
-				image:"./assets/images/ChickenBotiRoll.jpg"
+				image:"./assets/images/ButterChicken.jpg"
 			},{
 				name:"Rice & Breads",
 				items:riceAndBreads,
-				image:"./assets/images/ChickenBotiRoll.jpg"
+				image:"./assets/images/GoatBiryani.jpg"
 			},{
 				name:"Beverages",
 				items:beverages
@@ -127,7 +127,7 @@
 			},{
 				name:"Vegetarian Entrees",
 				items:vegetarianEntrees,
-				image:"./assets/images/ChickenBotiRoll.jpg"
+				image:"./assets/images/TarkaDaal.jpg"
 			},{
 				name:"Rolls & Buns",
 				items:rollsAndBuns,
@@ -138,7 +138,7 @@
 			},{
 				name:"Wings",
 				items:wings,
-				image:"./assets/images/ChickenBotiRoll.jpg"
+				image:"./assets/images/PriyankasMasalaWings.jpg"
 			}
 		];
 		
@@ -161,7 +161,7 @@
 			if (typeof sections[x].image !== "undefined") {
 				let image = document.createElement('figure');
 				
-				image.innerHTML = `<img src="./assets/images/ChickenBotiRoll.jpg" alt="Chicken Boti Roll" class="menu-category-image"><figcaption><em>Chicken Boti Roll</em></figcaption>`;
+				image.innerHTML = `<img src=${sections[x].image} alt="Chicken Boti Roll" class="menu-category-image"><figcaption><em>Chicken Boti Roll</em></figcaption>`;
 				imageNode.appendChild(image);
 			}
 			
