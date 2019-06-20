@@ -72,7 +72,7 @@
 		</div>
 		<main role="main" class="flex-shrink-0">
 			<div class="container padtop">
-				<div class="row" id="insert-here">
+				<div class="row" id="columns-here">
 				</div>
 			</div>
 		</main>
@@ -95,97 +95,124 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<script>
-		const sections = [
+		
+		const columns = [];
+		columns.push([
 			{
 				name:"Appetizers",
 				items:appetizers,
 				image:"./assets/images/Chicken65.jpg"
 			},{
-				name:"Kababs & Grill",
-				items:kababsAndGrill,
-				image:"./assets/images/MasalaBotiChicken.jpg"
-			},{
-				name:"Non-Vegetarian Entrees",
-				items:entrees,
-				image:"./assets/images/ButterChicken.jpg"
-			},{
-				name:"Rice & Breads",
-				items:riceAndBreads,
-				image:"./assets/images/GoatBiryani.jpg"
-			},{
-				name:"Beverages",
-				items:beverages
-			},{
-				name:"Burger Mania",
-				items:burgerMania
-			},{
-				name:"Desserts",
-				items:desserts
-			},{
-				name:"Kids' Menu",
-				items:kidsMenu
-			},{
-				name:"Vegetarian Entrees",
-				items:vegetarianEntrees,
-				image:"./assets/images/TarkaDaal.jpg"
-			},{
 				name:"Rolls & Buns",
 				items:rollsAndBuns,
 				image:"./assets/images/ChickenBotiRoll.jpg"
-			},{
-				name:"Sides",
-				items:sides
 			},{
 				name:"Wings",
 				items:wings,
 				image:"./assets/images/PriyankasMasalaWings.jpg"
 			}
-		];
+		]);
 		
-		for (let x in sections) {
+		columns.push([
+			{
+				name:"Kababs & Grill",
+				items:kababsAndGrill,
+				image:"./assets/images/MasalaBotiChicken.jpg"
+			},{
+				name:"Burger Mania",
+				items:burgerMania
+			}
+		]);
+		
+		columns.push([
+			{
+				name:"Non-Vegetarian Entrees",
+				items:entrees,
+				image:"./assets/images/ButterChicken.jpg"
+			},{
+				name:"Vegetarian Entrees",
+				items:vegetarianEntrees,
+				image:"./assets/images/TarkaDaal.jpg"
+			},{
+				name:"Kids' Menu",
+				items:kidsMenu
+			}
+		]);
+		
+		columns.push([
+			{
+				name:"Rice & Breads",
+				items:riceAndBreads,
+				image:"./assets/images/GoatBiryani.jpg"
+			},{
+				name:"Sides",
+				items:sides
+			},{
+				name:"Beverages",
+				items:beverages
+			},{
+				name:"Desserts",
+				items:desserts
+			}
+		]);
+		
+	function buildColumn(colArr, ind) {
+		
+		let nodeVar = document.getElementById("columns-here");
+		let columnElement = document.createElement('div');
+		columnElement.classList.add("col-lg-3","col-md-4","col-sm-6","col-xs-12");
+		columnElement.setAttribute("id", "column-"+ind);
+		nodeVar.appendChild(columnElement);
 			
-			let nodeVar = document.getElementById("insert-here");
-					
+		for (let x in colArr) {
+			
+			
+			let nodeVar = document.getElementById("column-"+ind);		
 			let z = document.createElement('div');
-			z.classList.add("col-lg-3","col-md-4","col-sm-6","col-xs-12");
-			z.innerHTML = `<div class="card menu-card" id="${sections[x].name}">
-								<div class="row" id="${sections[x].name}-image">
+			z.innerHTML = `<div class="card menu-card" id="${colArr[x].name}">
+								<div class="row" id="${colArr[x].name}-image">
 									<div class="col">
-										<h5 class="card-title">${sections[x].name}</h5>
+										<h5 class="card-title">${colArr[x].name}</h5>
 									</div>
 								</div>
 							</div>`;
 			nodeVar.appendChild(z);
-			let imageNode = document.getElementById(sections[x].name+"-image");
+			let imageNode = document.getElementById(colArr[x].name+"-image");
 			
-			if (typeof sections[x].image !== "undefined") {
+			if (typeof colArr[x].image !== "undefined") {
 				let image = document.createElement('figure');
 				
-				image.innerHTML = `<img src=${sections[x].image} alt="Chicken Boti Roll" class="menu-category-image"><figcaption><em>Chicken Boti Roll</em></figcaption>`;
+				image.innerHTML = `<img src=${colArr[x].image} alt="Chicken Boti Roll" class="menu-category-image"><figcaption><em>Chicken Boti Roll</em></figcaption>`;
 				imageNode.appendChild(image);
 			}
 			
 			
-			for (let y in sections[x].items) {
-			let sectionNode = document.getElementById(sections[x].name);
+			for (let y in colArr[x].items) {
+			let sectionNode = document.getElementById(colArr[x].name);
 			let item = document.createElement('div');
 			item.innerHTML = `	<div class="row">
 									<div class="col-8 col-auto item-style">
-										<p>${sections[x].items[y].name}</p>
+										<p>${colArr[x].items[y].name}</p>
 									</div>
 									<div class="col col-mr-auto price-style">
-										<p>${sections[x].items[y].price}</p>
+										<p>${colArr[x].items[y].price}</p>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col desc-style">
-										<p class="no-indent">${sections[x].items[y].description}</p>
+										<p class="no-indent">${colArr[x].items[y].description}</p>
 									</div>
 								</div>
 			`;
 			sectionNode.appendChild(item);
 			}
 		}
+	}
+	
+	columns.map((x, ind) => {
+		buildColumn(x,ind);
+	});
+
 		</script>
 	</body>
 </html>
