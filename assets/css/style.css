@@ -262,12 +262,15 @@ a {
     padding-left: 10px;
 }
 
-/*
+.no-indent {
+	text-indent: 0;
+}
+
 p {
 	padding-left: .5rem;
 	text-indent: -.5rem;
 }
-*/
+
 
 .col-12 {
 	max-width: fit-content;
