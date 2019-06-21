@@ -2,6 +2,7 @@
 	text-align: left;
 	margin-left: 15px;
 	padding-right: 0;
+	color: maroon;
 }
 
 .price-style {
@@ -15,6 +16,10 @@
 	color: red;
 }
 
+.card {
+	background-color: beige;
+}
+
 .menu-card {
 	text-align: center;
 	padding-top: 10px;
@@ -24,6 +29,7 @@
 .menu-category-image {
 	width: 79%;
 	margin-bottom:.3rem;
+	border-radius: .5rem;
 }
 
 .desc-style {
