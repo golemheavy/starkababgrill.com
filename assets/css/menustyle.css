@@ -24,3 +24,24 @@
 .menu-category-image {
 	width: 85%;
 }
+
+.desc-style {
+	
+	text-indent: none;
+	text-align: initial;
+	margin: .5rem 1rem 1.5rem 1rem;
+	font-style: oblique;
+	font-size:.97rem
+}
+
+.card-title {
+	margin: 1rem;
+}
+
+p {
+	margin-bottom: 0;
+}
+
+body {
+	line-height: 1.4;
+}

@@ -70,11 +70,6 @@ const kababsAndGrill = [
 		"price": 21.99
 	},
 	{
-		"name": "Half Charga (REMOVED)",
-		"description": "Chicken (half) marinated in an exquisite blend of spices and grilled to perfection in a tandoor (oven).",
-		"price": 16.99
-	},
-	{
 		"name": "Chusa (Cornish Hen)",
 		"description": "Whole cornish hen marinated in an exquisite blend of spices and grilled to perfection in a tandoor (oven).",
 		"price": 16.99
