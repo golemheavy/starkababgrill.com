@@ -21,7 +21,7 @@ const rollsAndBuns = [
 	},
 	{
 		"name": "Paneer Tikka Roll",
-		"description": "Chunks of spice-marinated and grilled chunks of paneer (Indian cottage cheese) wrapped in scrumptious flatbread (roti/paratha).",
+		"description": "Chunks of spice-marinated and grilled paneer (Indian cottage cheese) wrapped in scrumptious flatbread (roti/paratha).",
 		"price": 8.99
 	},
 	{

@@ -66,7 +66,7 @@ const kababsAndGrill = [
 	},
 	{
 		"name": "Charga (Chicken)",
-		"description": "Whole chicken marinated in an exquisite blend of spices and grilled to perfection in a tandoor (oven).",
+		"description": "Whole chicken cut into eight pieces, marinated in spices and then grilled to perfection in a tandoor.",
 		"price": 21.99
 	},
 	{
