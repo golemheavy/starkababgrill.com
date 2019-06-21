@@ -2,6 +2,7 @@
 	text-align: left;
 	margin-left: 15px;
 	padding-right: 0;
+	color: #800000;
 }
 
 .price-style {
@@ -22,5 +23,28 @@
 }
 
 .menu-category-image {
-	width: 85%;
+	width: 79%;
+	margin-bottom:.3rem;
+	border-radius: .5rem;
+}
+
+.desc-style {
+	
+	text-indent: none;
+	text-align: initial;
+	margin: .5rem 1rem 1.5rem 1rem;
+	font-style: oblique;
+	font-size:.95rem
+}
+
+.card-title {
+	margin: 1rem;
+}
+
+p {
+	margin-bottom: 0;
+}
+
+body {
+	line-height: 1.4;
 }
