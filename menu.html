@@ -172,14 +172,13 @@
 			}
 		]);
 		
-		
 		columns.push([
 			{
-				name:"Sides",
-				items:sides
-			},{
 				name:"Beverages",
 				items:beverages
+			},{
+				name:"Sides",
+				items:sides
 			},{
 				name:"Desserts",
 				items:desserts
@@ -202,19 +201,20 @@
 			let nodeVar = document.getElementById("column-"+ind);		
 			let z = document.createElement('div');
 			z.innerHTML = `<div class="card menu-card" id="${colArr[x].name}">
-								<div class="row" id="${colArr[x].name}-image">
+								<div class="row">
 									<div class="col">
 										<h5 class="card-title">${colArr[x].name}</h5>
 									</div>
 								</div>
 							</div>`;
 			nodeVar.appendChild(z);
-			let imageNode = document.getElementById(colArr[x].name+"-image");
+			let imageNode = document.getElementById(colArr[x].name);
 			
 			if (typeof colArr[x].image !== "undefined") {
-				let image = document.createElement('figure');
+				let image = document.createElement('div');
+				image.classList.add("row");
 				
-				image.innerHTML = `<img src=${colArr[x].image.url} alt=${colArr[x].image.alt} class="menu-category-image"><figcaption><em>${colArr[x].image.alt}</em></figcaption>`;
+				image.innerHTML = `<div class="col"><figure><img src=${colArr[x].image.url} alt=${colArr[x].image.alt} class="menu-category-image"><figcaption><em>${colArr[x].image.alt}</em></figcaption></figure></div>`;
 				imageNode.appendChild(image);
 			}
 			
