@@ -6,7 +6,7 @@ const entrees = [
 	},
 	{
 		"name": "Paya",
-		"description": "Heavy stew made from beef (feet and leg shanks), slow-cooked in an exquisite blend of spices.",
+		"description": "Goat stew, slow-cooked in an exquisite blend of spices.",
 		"price": 14.99
 	},
 	{
