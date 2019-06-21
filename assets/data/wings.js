@@ -1,11 +1,11 @@
 const wings = [
 	{
-		"name": "Salman Khan",
+		"name": "Salman Khan Wings",
 		"description": "Chicken wings marinated in a blend of mango and habenero sauce and deep fried.",
 		"price": 8.99
 	},
 	{
-		"name": "Shahrukh Khan",
+		"name": "Shahrukh Khan Wings",
 		"description": "Chicken wings marinated in a mix of herbs and exquisite Indian spices and grilled in a tandoor oven ",
 		"price": 8.99
 	},
