@@ -106,12 +106,12 @@
 					alt:"Chicken 65"
 				}
 			},{
-				name:"Rice & Breads",
-				items:riceAndBreads,
+				name:"Non-Vegetarian Entrees",
+				items:entrees,
 				image: {
-					url:"./assets/images/GoatBiryani.jpg",
-					alt:"Goat Biryani"
-					}
+					url:"./assets/images/ButterChicken.jpg",
+					alt:"Butter Chicken"
+				}
 			}
 		]);
 		
@@ -128,19 +128,19 @@
 		
 		columns.push([
 			{
-				name:"Non-Vegetarian Entrees",
-				items:entrees,
-				image: {
-					url:"./assets/images/ButterChicken.jpg",
-					alt:"Butter Chicken"
-				}
-			},{
 				name:"Vegetarian Entrees",
 				items:vegetarianEntrees,
 				image: {
 					url:"./assets/images/TarkaDaal.jpg",
 					alt:"Tarka Daal"
 				}
+			},{
+				name:"Rice & Breads",
+				items:riceAndBreads,
+				image: {
+					url:"./assets/images/GoatBiryani.jpg",
+					alt:"Goat Biryani"
+					}
 			}
 		]);
 		
@@ -152,7 +152,8 @@
 					url:"./assets/images/PriyankasMasalaWings.jpg",
 					alt:"Priyanka's Masala Wings"
 					}
-			},{
+			},
+			{
 				name:"Burger Mania",
 				items:burgerMania
 			}
@@ -174,19 +175,18 @@
 		
 		columns.push([
 			{
-				name:"Beverages",
-				items:beverages
-			},{
 				name:"Sides",
 				items:sides
+			},{
+				name:"Beverages",
+				items:beverages
 			},{
 				name:"Desserts",
 				items:desserts
 			}
 		]);
 		
-		
-		
+
 	function buildColumn(colArr, ind) {
 		
 		let nodeVar = document.getElementById("columns-here");
