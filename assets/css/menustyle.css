@@ -2,7 +2,7 @@
 	text-align: left;
 	margin-left: 15px;
 	padding-right: 0;
-	color: maroon;
+	color: #800000;
 }
 
 .price-style {
@@ -14,10 +14,6 @@
 .spicy-item {
 	font-weight: bold;
 	color: red;
-}
-
-.card {
-	background-color: beige;
 }
 
 .menu-card {

@@ -1,9 +1,16 @@
 body {
+	/*
 	background-image:url(../images/IMG_9284CroppedAndReduced.JPG);
 	background-repeat: no-repeat;
 	background-position: top left;
 	background-size: cover;
 	background-attachment: fixed;
+	*/
+	background-color: #696969;
+}
+
+.card {
+	background-color: #f5f5dc;
 }
 
 header {
