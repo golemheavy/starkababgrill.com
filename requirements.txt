@@ -6,4 +6,10 @@
 6. Move the map to the contact page.
 
 7. (from self): need to fix image formatting.
+8. maybe go to only 3 columns max
+9. Make sections collapsable / collapsed by default.
+10. make sections clickable links to pages just about that section, with items in their own clickable section.
+11. make item page.
+12. make items clickable from the main menu too. they should be able to be added to order "tray" from main menu page, category page, and indivual item page. (for online ordering)
+
 

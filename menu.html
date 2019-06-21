@@ -106,22 +106,12 @@
 					alt:"Chicken 65"
 				}
 			},{
-				name:"Rolls & Buns",
-				items:rollsAndBuns,
+				name:"Rice & Breads",
+				items:riceAndBreads,
 				image: {
-					url:"./assets/images/ChickenBotiRoll.jpg",
-					alt:"Chicken Boti Roll"
-				}
-			},{
-				name:"Wings",
-				items:wings,
-				image: {
-					url:"./assets/images/PriyankasMasalaWings.jpg",
-					alt:"Priyanka's Masala Wings"
-				}
-			},{
-				name:"Sides",
-				items:sides
+					url:"./assets/images/GoatBiryani.jpg",
+					alt:"Goat Biryani"
+					}
 			}
 		]);
 		
@@ -133,9 +123,6 @@
 					url:"./assets/images/MasalaBotiChicken.jpg",
 					alt:"Masala Boti Chicken"
 				}
-			},{
-				name:"Kids' Menu",
-				items:kidsMenu
 			}
 		]);
 		
@@ -154,34 +141,57 @@
 					url:"./assets/images/TarkaDaal.jpg",
 					alt:"Tarka Daal"
 				}
+			}
+		]);
+		
+		columns.push([
+			{
+				name:"Wings",
+				items:wings,
+				image: {
+					url:"./assets/images/PriyankasMasalaWings.jpg",
+					alt:"Priyanka's Masala Wings"
+					}
 			},{
 				name:"Burger Mania",
 				items:burgerMania
 			}
 		]);
 		
+		
 		columns.push([
-			{
-				name:"Rice & Breads",
-				items:riceAndBreads,
+		{
+				name:"Rolls & Buns",
+				items:rollsAndBuns,
 				image: {
-					url:"./assets/images/GoatBiryani.jpg",
-					alt:"Goat Biryani"
+					url:"./assets/images/ChickenBotiRoll.jpg",
+					alt:"Chicken Boti Roll"
 				}
 			},{
+				name:"Sides",
+				items:sides
+			}
+		]);
+		
+		columns.push([
+			{
 				name:"Beverages",
 				items:beverages
 			},{
 				name:"Desserts",
 				items:desserts
+			},{
+				name:"Kids' Menu",
+				items:kidsMenu
 			}
 		]);
+		
 		
 	function buildColumn(colArr, ind) {
 		
 		let nodeVar = document.getElementById("columns-here");
 		let columnElement = document.createElement('div');
-		columnElement.classList.add("col-lg-3","col-md-4","col-sm-6","col-xs-12");
+		columnElement.classList.add("col-lg-4","col-md-6","col-sm-12");
 		columnElement.setAttribute("id", "column-"+ind);
 		nodeVar.appendChild(columnElement);
 			
