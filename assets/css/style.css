@@ -21,6 +21,9 @@ header {
 	font-weight:500;
 }
 
+.contact-panel {
+	background-color: black;
+}
 
 .nav-item {
 	font-size:1.2rem;
@@ -69,7 +72,7 @@ body > header > div > nav > a > img {
 
 	#footer {
 		color: #7c8081;
-		padding: 5em 5em 5em 5em;
+		/* padding: 5em 5em 5em 5em; */
 		text-align: center;
 	}
 
