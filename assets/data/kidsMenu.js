@@ -1,12 +1,12 @@
 const kidsMenu = [
 	{
 		"name": "Chicken Strips",
-		"description": "Bite-sized pieces of tender, breast pieces of chicken seasoned and hand-breaded to perfection and deep fried.",
+		"description": "Bite-sized pieces of tender, breast pieces of chicken seasoned and hand-breaded to perfection and deep-fried.",
 		"price": 5.99
 	},
 	{
 		"name": "Chicken Ranch",
-		"description": "Bite-sized pieces of tender, breast pieces of chicken hand-breaded and seasoned in ranch sauce and deep fried.",
+		"description": "Bite-sized pieces of tender, breast pieces of chicken hand-breaded and seasoned in ranch sauce and deep-fried.",
 		"price": 5.99
 	},
 	{

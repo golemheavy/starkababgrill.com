@@ -96,12 +96,12 @@ const kababsAndGrill = [
 	},
 	{
 		"name": "Fried Snapper",
-		"description": "Whole snapper fish marinated in a tantalizing blend of spices and deep fried.",
+		"description": "Whole snapper fish marinated in a tantalizing blend of spices and deep-fried.",
 		"price": 28.99
 	},
 	{
 		"name": "Fried Pomfret",
-		"description": "Whole pompret fish marinated in a delectable blend of spices and deep fried.",
+		"description": "Whole pompret fish marinated in a delectable blend of spices and deep-fried.",
 		"price": 19.99
 	},
 	{

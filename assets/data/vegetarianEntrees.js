@@ -21,7 +21,7 @@ const vegetarianEntrees = [
 	},
 	{
 		"name": "Paneer Tikka",
-		"description": "Luscious cubes of paneer (Indian cottage cheese) marinated in spices and barbequed",
+		"description": "Luscious cubes of paneer (Indian cottage cheese) marinated in spices and barbequed.",
 		"price": 12.99
 	},
 	{

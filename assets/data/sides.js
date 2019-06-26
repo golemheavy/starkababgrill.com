@@ -1,7 +1,7 @@
 const sides = [
 	{
 		"name": "Fries",
-		"description": "Potato strips deep fried until crispy on the outside and tender on the inside and sprinkled with a blend of spices.",
+		"description": "Potato strips deep-fried until crispy on the outside and tender on the inside and sprinkled with a blend of spices.",
 		"price": 2.99
 	},
 	{
