@@ -1,7 +1,7 @@
 const kababsAndGrill = [
 	{
 		"name": "Chicken Tikka (Leg)",
-		"description": "Chicken leg quarter marinated in an exquisite blend of spices and yogurt and barbequed to perfection.",
+		"description": "Chicken leg quarter marinated in a mouthwatering blend of spices and yogurt and barbequed to perfection.",
 		"price": 6.99
 	},
 	{
@@ -21,7 +21,7 @@ const kababsAndGrill = [
 	},
 	{
 		"name": "Masala Chicken Boti (Spicy!)",
-		"description": "Succulent boneless chicken marinated in exquisite and tongue-searing spices and barbequed to perfection.",
+		"description": "Succulent boneless chicken marinated in tongue-searing spices and barbequed to perfection.",
 		"price": 11.99
 	},
 	{
@@ -31,47 +31,47 @@ const kababsAndGrill = [
 	},
 	{
 		"name": "Seekh Kabab (Chicken)",
-		"description": "Skewers of tender pieces of chicken marinated in fresh herbs and charcoal-grilled to perfection.",
+		"description": "Ground chicken mixed with fresh hebs and spices, shaped into cylindrical kababs and grilled to perfection.",
 		"price": 9.99
 	},
 	{
 		"name": "Seekh Kabab (Beef)",
-		"description": "Skewers of tender pieces of beef marinated in fresh herbs and charcoal-grilled to perfection.",
+		"description": "Ground beef mixed with fresh hebs and spices, shaped into cylindrical kababs and grilled to perfection.",
 		"price": 9.99
 	},
 	{
 		"name": "Seekh Kabab (Goat)",
-		"description": "Skewers of tender pieces of goat marinated in fresh herbs and charcoal-grilled to perfection.",
+		"description": "Ground goat meat mixed with fresh hebs and spices, shaped into cylindrical kababs and grilled to perfection.",
 		"price": 14.99
 	},
 	{
 		"name": "Tangri Kabab (Spicy!)",
-		"description": "Chicken drumsticks marinated in an exquisite blend of tongue-searing spices and barbequed to perfection.",
+		"description": "Chicken drumsticks marinated in a blend of tongue-searing spices and barbequed to perfection.",
 		"price": 12.99
 	},
 	{
 		"name": "Bihari Kabab (Beef or Chicken)",
-		"description": "Beef/boneless chicken marinated in fresh herbs and roasted to perfection and then thinly sliced. ",
+		"description": "Beef/boneless chicken marinated in fresh herbs and roasted to perfection and then thinly sliced.",
 		"price": 12.99
 	},
 	{
 		"name": "Chapli Kabab (Beef or Chicken)",
-		"description": "Beef/chicken patty seasoned with an exquisite blend of Indian spices and grilled to perfection. ",
+		"description": "Beef/chicken patty seasoned with a blend of Indian spices and grilled to perfection.",
 		"price": 9.99
 	},
 	{
 		"name": "Chapli Kabab Goat",
-		"description": "Ground goat patty seasoned with an exquisite blend of Indian spices and grilled to perfection. ",
+		"description": "Ground goat patty seasoned with a blend of Indian spices and grilled to perfection.",
 		"price": 14.99
 	},
 	{
 		"name": "Charga (Chicken)",
-		"description": "Whole chicken cut into eight pieces, marinated in spices and then grilled to perfection in a tandoor.",
+		"description": "Whole chicken cut into eight pieces, a blend of spices and grilled to perfection in a tandoor (oven).",
 		"price": 21.99
 	},
 	{
 		"name": "Chusa (Cornish Hen)",
-		"description": "Whole cornish hen marinated in an exquisite blend of spices and grilled to perfection in a tandoor (oven).",
+		"description": "Whole cornish hen marinated in a blend of spices and grilled to perfection in a tandoor (oven).",
 		"price": 16.99
 	},
 	{
@@ -96,22 +96,22 @@ const kababsAndGrill = [
 	},
 	{
 		"name": "Fried Snapper",
-		"description": "Whole snapper fish marinated in an exquisite blend of spices and deep fried.",
+		"description": "Whole snapper fish marinated in a tantalizing blend of spices and deep fried.",
 		"price": 28.99
 	},
 	{
 		"name": "Fried Pomfret",
-		"description": "Whole pompret fish marinated in an exquisite blend of spices and deep fried.",
+		"description": "Whole pompret fish marinated in a delectable blend of spices and deep fried.",
 		"price": 19.99
 	},
 	{
 		"name": "Mixed Grill",
-		"description": "A combination of chicken seekh kabab, chicken boti, beef seekh kabab, and beef chapli",
+		"description": "A combination of chicken seekh kabab, chicken boti, beef seekh kabab, and beef chapli.",
 		"price": 24.99
 	},
 	{
 		"name": "Mixed Grill Family Platter",
-		"description": "A combination of chicken seekh kabab, chicken boti, chicken chapli, beef seekh kabab, beef Bihari kabab, and beef seekh kabab",
+		"description": "A combination of chicken seekh kabab, chicken boti, chicken chapli, beef seekh kabab, beef Bihari kabab, and beef seekh kabab.",
 		"price": 55.99
 	}
 ];

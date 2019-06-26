@@ -6,7 +6,7 @@ const beverages = [
 	},
 	{
 		"name": "Pakola",
-		"description": "Pakistan-Cola: Flavored soda from Pakistan",
+		"description": "Pakistan-Cola: Flavored soda from Pakistan.",
 		"price": 1.99
 	},
 	{
@@ -41,7 +41,7 @@ const beverages = [
 	},
 	{
 		"name": "Chai",
-		"description": "Hot milk-tea brewed from an exquisite blend of tea leaves, herbs and spices (masala).",
+		"description": "Hot milk-tea brewed from a delicate blend of tea leaves, herbs and spices (masala).",
 		"price": 1.99
 	},
 	{

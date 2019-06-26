@@ -1,17 +1,17 @@
 const entrees = [
 	{
 		"name": "Nihari",
-		"description": "Lean beef shank stew, slow-simmered in a sauce made of fresh ginger and other exquisite spices.",
+		"description": "Lean beef shank stew, slow-simmered in a sauce made of fresh ginger and other mouthwatering spices.",
 		"price": 12.99
 	},
 	{
 		"name": "Paya",
-		"description": "Goat stew, slow-cooked in an exquisite blend of spices.",
+		"description": "Bone-in goat stew, slow-cooked in a savory blend of spices.",
 		"price": 14.99
 	},
 	{
 		"name": "Haleem",
-		"description": "Shredded beef slow-cooked with lentils, onions and an exquisite blend of spices.",
+		"description": "Shredded beef slow-cooked with lentils, onions and a bouquet of spices.",
 		"price": 9.99
 	},
 	{
@@ -31,7 +31,7 @@ const entrees = [
 	},
 	{
 		"name": "Karahi Chicken",
-		"description": "Tender bone-in chicken pieces simmered in a gravy made of fresh tomatoes and Karahi masala (an exquisite spice blend).",
+		"description": "Tender bone-in chicken pieces simmered in a gravy made of fresh tomatoes and Karahi masala (an exceptional spice blend).",
 		"price": 9.99
 	},
 	{
@@ -41,7 +41,7 @@ const entrees = [
 	},
 	{
 		"name": "Boneless Chicken Karahi",
-		"description": "Tender boneless chicken pieces simmered in a gravy made of fresh tomatoes and Karahi masala (an exquisite spice blend).",
+		"description": "Tender boneless chicken pieces simmered in a gravy made of fresh tomatoes and Karahi masala (a special spice blend).",
 		"price": 12.99
 	},
 	{
