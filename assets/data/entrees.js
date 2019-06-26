@@ -45,7 +45,7 @@ const entrees = [
 		"price": 12.99
 	},
 	{
-		"name": "Masala Shrimp",
+		"name": "Masala Shrimp (Spicy!)",
 		"description": "Succulent shrimp cooked in a medium-spiced sauce of fresh tomatoes and spices.",
 		"price": 14.99
 	},
@@ -56,7 +56,7 @@ const entrees = [
 	},
 	{
 		"name": "Butter Chicken",
-		"description": "Boneless: Chunks of spice-marinated, tandoor-grilled chicken pieces simmered in a creamy sauce. (Chicken tikka masala). Bone in: Chunks of spice-marinated, tandoor-grilled chicken pieces simmered in a creamy sauce.",
+		"description": "Boneless: Chunks of spice-marinated, tandoor-grilled chicken pieces simmered in a creamy sauce (Chicken Tikka Masala). Bone-in: Chunks of spice-marinated, tandoor-grilled chicken pieces simmered in a creamy sauce.",
 		"price": 12.99
 	}
 ];

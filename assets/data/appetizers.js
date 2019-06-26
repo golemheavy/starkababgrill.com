@@ -10,12 +10,12 @@ const appetizers = [
 		"price": 3.99
 	},
 	{
-		"name": "Chicken 65",
+		"name": "Chicken 65  (Spicy!)",
 		"description": "Tender pieces of deep-fried chicken sauteed in spicy red chillies and tongue-searing spices.",
 		"price": 9.99
 	},
 	{
-		"name": "Paneer 65",
+		"name": "Paneer 65  (Spicy!)",
 		"description": "Tender cubes of deep-fried paneer (Indian cottage cheese) sauteed in spicy red chillies and tantalizing spices.",
 		"price": 9.99
 	},
