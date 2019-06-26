@@ -9,6 +9,18 @@ body {
 	background-color: #696969;
 }
 
+.col-right {
+    display:inline-block;
+    float:none;
+    text-align: right;
+}
+
+.col-left {
+    display:inline-block;
+    float:none;
+    text-align: left;
+}
+
 .card {
 	background-color: #f5f5dc;
 }
