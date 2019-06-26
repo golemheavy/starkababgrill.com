@@ -278,6 +278,10 @@ a {
     padding-left: 10px;
 }
 
+a.icon {
+	margin: .5rem;
+}
+
 .no-indent {
 	text-indent: 0;
 }
