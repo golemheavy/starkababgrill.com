@@ -33,5 +33,5 @@ const burgerMania = [
 		"name": "Chicken Ranch Sandwich",
 		"description": "Succulent chicken breast topped with Swiss cheese, ranch dressing and a medium spicy sauce.",
 		"price": 5.99
-	},
+	}
 ];
