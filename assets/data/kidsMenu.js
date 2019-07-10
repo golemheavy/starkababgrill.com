@@ -17,6 +17,6 @@ const kidsMenu = [
 	{
 		"name": "Grilled Cheese",
 		"description": "Sandwich made of golden slices of cheese grilled to perfection.",
-		"price": 5.99
+		"price": 4.99
 	}
 ];

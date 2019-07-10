@@ -27,7 +27,7 @@ const riceAndBreads = [
 	{
 		"name": "Goat Biryani",
 		"description": "Long-grained basmati rice layered with marinated succulent pieces of goat cooked in a spicy gravy.",
-		"price": 12.99
+		"price": 14.99
 	},
 	{
 		"name": "Shrimp Biryani",
@@ -62,6 +62,6 @@ const riceAndBreads = [
 	{
 		"name": "Naan",
 		"description": "Tandoor-baked flaky flatbread.",
-		"price": 1.79
+		"price": 1.99
 	}
 ];

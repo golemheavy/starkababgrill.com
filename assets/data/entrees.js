@@ -32,7 +32,7 @@ const entrees = [
 	{
 		"name": "Karahi Chicken",
 		"description": "Tender bone-in chicken pieces simmered in a gravy made of fresh tomatoes and Karahi masala (an exceptional spice blend).",
-		"price": 9.99
+		"price": 10.99
 	},
 	{
 		"name": "Achari Chicken",

@@ -23,5 +23,10 @@ const wings = [
 		"name": "Chef's Special Wings",
 		"description": "Chicken wings marinated in buffalo sauce with a touch of our chef's magic and deep-fried.",
 		"price": 8.99
+	},
+	{
+		"name": "Tikka Masala Wings",
+		"description": "Chicken wings marinated in tikka masala sauce and deep-fried.",
+		"price": 8.99
 	}
 ];

@@ -2,12 +2,12 @@ const kababsAndGrill = [
 	{
 		"name": "Chicken Tikka (Leg)",
 		"description": "Chicken leg quarter marinated in a mouthwatering blend of spices and yogurt and barbequed to perfection.",
-		"price": 6.99
+		"price": 5.99
 	},
 	{
 		"name": "Chicken Tikka (Breast)",
 		"description": "Succulent chicken breast marinated in an exquisite blend of spices and yogurt and barbequed to perfection.",
-		"price": 7.99
+		"price": 6.99
 	},
 	{
 		"name": "Hariyali Chicken Boti",
@@ -57,7 +57,7 @@ const kababsAndGrill = [
 	{
 		"name": "Chapli Kabab (Beef or Chicken)",
 		"description": "Beef/chicken patty seasoned with a blend of Indian spices and grilled to perfection.",
-		"price": 9.99
+		"price": 10.99
 	},
 	{
 		"name": "Chapli Kabab Goat",
