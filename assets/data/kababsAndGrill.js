@@ -25,13 +25,8 @@ const kababsAndGrill = [
 		"price": 11.99
 	},
 	{
-		"name": "Seekh Kabab (Chicken)",
-		"description": "Ground chicken mixed with fresh hebs and spices, shaped into cylindrical kababs and grilled to perfection.",
-		"price": 9.99
-	},
-	{
-		"name": "Seekh Kabab (Beef)",
-		"description": "Ground beef mixed with fresh hebs and spices, shaped into cylindrical kababs and grilled to perfection.",
+		"name": "Seekh Kabab (Beef or Chicken)",
+		"description": "Ground beef or chicken mixed with fresh hebs and spices, shaped into cylindrical kababs and grilled to perfection.",
 		"price": 9.99
 	},
 	{
@@ -52,7 +47,7 @@ const kababsAndGrill = [
 	{
 		"name": "Chapli Kabab (Beef or Chicken)",
 		"description": "Beef/chicken patty seasoned with a blend of Indian spices and grilled to perfection.",
-		"price": 10.99
+		"price": 11.99
 	},
 	{
 		"name": "Chapli Kabab Goat",

@@ -1,7 +1,7 @@
 const kidsMenu = [
 	{
 		"name": "Chicken Strips",
-		"description": "Bite-sized pieces of tender, breast pieces of chicken seasoned and hand-breaded to perfection and deep-fried.",
+		"description": "Bite-sized pieces of tender, breast pieces of chicken seasoned and hand-breaded to perfection and deep-fried. Served with fries.",
 		"price": 5.99
 	},
 	{
@@ -17,6 +17,6 @@ const kidsMenu = [
 	{
 		"name": "Grilled Cheese",
 		"description": "Sandwich made of golden slices of cheese grilled to perfection.",
-		"price": 4.99
+		"price": 3.99
 	}
 ];
