@@ -10,11 +10,6 @@ const kababsAndGrill = [
 		"price": 6.99
 	},
 	{
-		"name": "Hariyali Chicken Boti",
-		"description": "Succulent pieces of chicken breast marinated in a blend of cilantro, mint and other spices and barbequed to perfection.",
-		"price": 11.99
-	},
-	{
 		"name": "Malai Chicken Boti",
 		"description": "Succulent pieces of chicken breast marinated in mild spices and barbequed to perfection.",
 		"price": 11.99
@@ -70,11 +65,6 @@ const kababsAndGrill = [
 		"price": 21.99
 	},
 	{
-		"name": "Chusa (Cornish Hen)",
-		"description": "Whole cornish hen marinated in a blend of spices and grilled to perfection in a tandoor (oven).",
-		"price": 16.99
-	},
-	{
 		"name": "Lamb Chops",
 		"description": "Lamb chops marinated in a spicy blend and grilled to perfection.",
 		"price": 19.99
@@ -107,7 +97,7 @@ const kababsAndGrill = [
 	{
 		"name": "Mixed Grill",
 		"description": "A combination of chicken seekh kabab, chicken boti, beef seekh kabab, and beef chapli.",
-		"price": 24.99
+		"price": 25.99
 	},
 	{
 		"name": "Mixed Grill Family Platter",

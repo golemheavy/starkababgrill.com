@@ -12,7 +12,7 @@ const riceAndBreads = [
 	{
 		"name": "Chicken Biryani",
 		"description": "Long-grained basmati rice layered with marinated chicken pieces cooked in a spicy gravy.",
-		"price": 9.99
+		"price": 10.99
 	},
 	{
 		"name": "Boneless Chicken Biryani",
@@ -56,7 +56,7 @@ const riceAndBreads = [
 	},
 	{
 		"name": "Paratha",
-		"description": "Buttery, flaky, multilayered flatbread.",
+		"description": "Buttery, flaky flatbread.",
 		"price": 2.49
 	},
 	{
