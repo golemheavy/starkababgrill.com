@@ -25,6 +25,10 @@ body {
 	background-color: #f5f5dc;
 }
 
+.navbar-brand {
+	margin: auto;
+}
+
 header {
 	background-color: #17416d;
 }
@@ -42,7 +46,7 @@ header {
 }
 
 body > header > div > nav > a > img {
-	width: 220px;
+	width: 10rem;
 	height: auto;
 }
 
