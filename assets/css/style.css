@@ -25,6 +25,10 @@ body {
 	background-color: #f5f5dc;
 }
 
+.card-body {
+	text-align: center;
+}
+
 .navbar-brand {
 	margin: auto;
 }
@@ -302,4 +306,10 @@ p {
 	max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
+}
+
+.halal-seal {
+	width: 5rem;
+	height:auto;
+	margin: auto;
 }
