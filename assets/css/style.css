@@ -11,14 +11,17 @@ body {
 }
 
 /*
-main {
-	background-color: black;
+.bigbackimg {
+	background-image:url(../images/dsc_6872-min1.jpg);
+	background-size: cover;
+	margin-bottom: auto;
+    margin-top: auto;
 }
 */
 
 .bigbackimg {
-	background-image:url(../images/dsc_6872-min1.jpg);
-	background-size: cover;
+	background: url(../images/dsc_6872-min1.jpg) no-repeat center/cover fixed;
+    margin-bottom: auto;
 	margin-bottom: auto;
     margin-top: auto;
 }
