@@ -40,7 +40,8 @@ body {
 
 .card {
 	/* background-color: #f5f5dc; */
-	background-color: antiquewhite;
+	/*background-color: antiquewhite; */
+	background-color: #faebd7aa;
 }
 
 .card-body {
