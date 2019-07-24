@@ -5,8 +5,22 @@ body {
 	background-position: top left;
 	background-size: cover;
 	background-attachment: fixed;
-	*/
 	background-color: #696969;
+	*/
+	background-color: antiquewhite;
+}
+
+/*
+main {
+	background-color: black;
+}
+*/
+
+.bigbackimg {
+	background-image:url(../images/dsc_6872-min1.jpg);
+	background-size: cover;
+	margin-bottom: auto;
+    margin-top: auto;
 }
 
 .col-right {
@@ -22,7 +36,8 @@ body {
 }
 
 .card {
-	background-color: #f5f5dc;
+	/* background-color: #f5f5dc; */
+	background-color: antiquewhite;
 }
 
 .card-body {
@@ -77,12 +92,15 @@ body > header > div > nav > a > img {
 
 .padtop {
 	padding-top: 2rem;
+	padding-bottom: 2rem;
+	margin-top: 2rem;
 	margin-bottom: 2rem;
 }
 
 .footer {
   background-color: #17416d;
   text-align: center;
+  /* margin-top: auto; */
 }
 
 .footer > .container {
@@ -300,6 +318,7 @@ p {
 	padding-left: .5rem;
 	text-indent: -.5rem;
 }
+
 
 
 .col-12 {
