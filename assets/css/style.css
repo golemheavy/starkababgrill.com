@@ -12,6 +12,11 @@ body {
 
 /*
 .bigbackimg {
+		background: url(../images/dsc_6808-min.jpg) no-repeat center/cover fixed;
+		background: url(../images/dsc_6843-min.jpg) no-repeat center/cover fixed;
+		background: url(../images/dsc_6868-min.jpg) no-repeat center/cover fixed;
+		background: url(../images/dsc_6872-min1.jpg) no-repeat center/cover fixed;
+		
 	background-image:url(../images/dsc_6872-min1.jpg);
 	background-size: cover;
 	margin-bottom: auto;
@@ -20,7 +25,7 @@ body {
 */
 
 .bigbackimg {
-	background: url(../images/dsc_6872-min1.jpg) no-repeat center/cover fixed;
+	/* background: url(../images/dsc_6872-min1.jpg) no-repeat center/cover fixed; */
     margin-bottom: auto;
 	margin-bottom: auto;
     margin-top: auto;
