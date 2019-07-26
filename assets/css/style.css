@@ -6,8 +6,9 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 	background-color: #696969;
-	*/
 	background-color: antiquewhite;
+	*/
+	background-color: currentColor;
 }
 
 /*
@@ -58,7 +59,8 @@ body {
 }
 
 header {
-	background-color: #17416d;
+	/* background-color: #17416d; */
+	background-color: black;
 }
 
 .item-style {
