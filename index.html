@@ -14,7 +14,7 @@
 
 		<title>Welcome to Star Kabab!</title>
 	</head>
-	<body class="d-flex flex-column h-100">
+	<body class="d-flex flex-column h-100 bigbackimg2">
 		<header>
 			<div class="container">
 				<nav class="navbar navbar-expand-md navbar-dark">
@@ -44,8 +44,7 @@
 				</nav>
 			</div>
 		</header>
-		<div class="bigbackimg" >
-		<main role="main" class="flex-shrink-0">
+		<main role="main" class="flex-shrink-0 bigbackimg" >
 			<div class="container padtop">
 				<div class="row">
 					<div class="col-auto maincol">
@@ -62,7 +61,6 @@
 				</div>
 			</div>
 		</main>
-		</div>
 		<footer class="footer" id = "footer">
 			<div class="container-fluid contact-panel py-3" style="padding-top:0!important;padding-bottom:0!important;">
 				<div class="row" style="display:inline-flex;">
@@ -104,15 +102,23 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<script>
 		
-		var elem = document.getElementsByClassName("bigbackimg");
+		var bgimages = [
+			"background2-reduced.JPEG",
+			"background3-reduced.JPEG",
+			"background4-reduced.JPEG",
+			"background5-reduced.JPEG"
+		];
+		
+		var elem = document.getElementsByClassName("bigbackimg2");
+		
+		
 		if (elem.length === 1) {
-			switch (Math.floor(Math.random() * 4)) {
-				case 0: elem[0].style.background = "url(./assets/images/dsc_6808-min.jpg) no-repeat center/cover fixed"; break;
-				case 1: elem[0].style.background = "url(./assets/images/dsc_6843-min.jpg) no-repeat center/cover fixed"; break;
-				case 2: elem[0].style.background = "url(./assets/images/dsc_6868-min.jpg) no-repeat center/cover fixed"; break;
-				case 3: elem[0].style.background = "url(./assets/images/dsc_6872-min1.jpg) no-repeat center/cover fixed"; break;
-			}
+			elem[0].style.background = `url(./assets/images/background/${bgimages[Math.floor(Math.random() * bgimages.length)]}) no-repeat center/cover fixed`;
 		}
+		else {
+			elem[0].style.background = "url(./assets/images/background/background2-reduced.JPEG) no-repeat center/cover fixed";
+		}
+		
 		</script>
 	</body>
 </html>

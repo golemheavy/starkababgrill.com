@@ -9,6 +9,7 @@ body {
 	background-color: antiquewhite;
 	*/
 	background-color: currentColor;
+	
 }
 
 /*
@@ -130,7 +131,7 @@ body > header > div > nav > a > img {
 		#footer .copyright {
 			font-size: 0.8em;
 			line-height: 1rem;
-			margin-top: 1rem;
+			/*margin-top: 1rem;*/
 		}
 
 			#footer .copyright a {
