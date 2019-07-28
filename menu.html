@@ -146,6 +146,14 @@
 					url:"./assets/images/MasalaBotiChicken.jpg",
 					alt:"Masala Chicken Boti"
 				}
+			},
+			{
+				name:"Wings",
+				items:wings,
+				image: {
+					url:"./assets/images/PriyankasMasalaWings.jpg",
+					alt:"Priyanka's Masala Wings"
+					}
 			}
 		]);
 		
@@ -168,14 +176,6 @@
 		]);
 		
 		columns.push([
-			{
-				name:"Wings",
-				items:wings,
-				image: {
-					url:"./assets/images/PriyankasMasalaWings.jpg",
-					alt:"Priyanka's Masala Wings"
-					}
-			},
 			{
 				name:"Burger Mania",
 				items:burgerMania
@@ -223,8 +223,6 @@
 			
 			let nodeVar = document.getElementById("column-"+ind);		
 			let z = document.createElement('div');
-			//z.classList.add("collapse");
-			//z.setAttribute("id","collapseTarget");
 			z.innerHTML = `<div class="card menu-card" id="${colArr[x].name}">
 								<div class="row">
 									<div class="col">
@@ -243,9 +241,12 @@
 				imageNode.appendChild(image);
 			}
 			
-			
-			for (let y in colArr[x].items) {
 			let sectionNode = document.getElementById(colArr[x].name);
+			let v = document.createElement('div');
+			v.classList.add("collapse");
+			//v.setAttribute("id","collapseTarget");
+			for (let y in colArr[x].items) {
+			//let sectionNode = document.getElementById(colArr[x].name);
 			let item = document.createElement('div');
 			item.innerHTML = `	<div class="row">
 									<div class="col-8 col-auto item-style">
@@ -261,8 +262,9 @@
 									</div>
 								</div>
 			`;
-			sectionNode.appendChild(item);
+			v.appendChild(item);
 			}
+			sectionNode.appendChild(v);
 		}
 	}
 	
