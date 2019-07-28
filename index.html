@@ -135,7 +135,11 @@
 				bodyElem.style.backgroundImage = "url(./assets/images/background/" + bgimages[Math.floor(Math.random() * bgimages.length)] + ")";
 				bodyElem.style.backgroundSize = "auto";
 				bodyElem.style.backgroundAttachment = "scroll";
+				bodyElem.style.backgroundPositionX = "center";
+				bodyElem.style.backgroundPositionY = "bottom";
 			} else {
+				bodyElem.style.backgroundPositionX = "center";
+				bodyElem.style.backgroundPositionY = "center";
 				bodyElem.style.backgroundImage = "url(./assets/images/background/" + bgimages[Math.floor(Math.random() * bgimages.length)] + ")";
 				bodyElem.style.backgroundSize = "cover";
 				bodyElem.style.backgroundAttachment = "fixed";
