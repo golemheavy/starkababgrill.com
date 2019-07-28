@@ -119,95 +119,73 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<script>
 		
-		const columns = [];
-		columns.push([
-			{
+		const columns = [
+		[{
 				name:"Appetizers",
 				items:appetizers,
 				image: {
 					url:"./assets/images/Chicken65.jpg",
 					alt:"Chicken 65"
 				}
-			},{
+		}],[{
 				name:"Non-Vegetarian Entrees",
 				items:entrees,
 				image: {
 					url:"./assets/images/ButterChicken.jpg",
 					alt:"Butter Chicken"
 				}
-			}
-		]);
 		
-		columns.push([
-			{
+		}],[{
 				name:"Kababs & Grill",
 				items:kababsAndGrill,
 				image: {
 					url:"./assets/images/MasalaBotiChicken.jpg",
 					alt:"Masala Chicken Boti"
 				}
-			},
-			{
+		}],[{
 				name:"Wings",
 				items:wings,
 				image: {
 					url:"./assets/images/PriyankasMasalaWings.jpg",
 					alt:"Priyanka's Masala Wings"
 					}
-			}
-		]);
-		
-		columns.push([
-			{
+		}],[{
 				name:"Vegetarian Entrees",
 				items:vegetarianEntrees,
 				image: {
 					url:"./assets/images/TarkaDaal.jpg",
 					alt:"Tarka Daal"
 				}
-			},{
+		}],[{
 				name:"Rice & Breads",
 				items:riceAndBreads,
 				image: {
 					url:"./assets/images/GoatBiryani.jpg",
 					alt:"Goat Biryani"
-					}
-			}
-		]);
-		
-		columns.push([
-			{
-				name:"Burger Mania",
-				items:burgerMania
-			}
-		]);
-		
-		columns.push([
-			{
+				}
+		}],[{
 				name:"Rolls & Buns",
 				items:rollsAndBuns,
 				image: {
 					url:"./assets/images/ChickenBotiRoll.jpg",
 					alt:"Chicken Boti Roll"
-				}
-			},{
+				}		
+		}],[{
+				name:"Burger Mania",
+				items:burgerMania
+		},{
 				name:"Kids' Menu",
 				items:kidsMenu
-			}
-		]);
-		
-		columns.push([
-			{
+		},{
 				name:"Sides",
 				items:sides
-			},{
+		}],[{
 				name:"Beverages",
 				items:beverages
-			},{
+		},{
 				name:"Desserts",
 				items:desserts
-			}
-		]);
+		}]];
 		
 
 	function buildColumn(colArr, ind) {
@@ -226,7 +204,7 @@
 			z.innerHTML = `<div class="card menu-card" id="${colArr[x].name}">
 								<div class="row">
 									<div class="col">
-										<a data-toggle="collapse" href="#collapseTarget${colArr[x].name.replace(/\s|\&/g, '')}" role="button" aria-expanded="false" aria-controls="collapseTarget${colArr[x].name.replace(/\s|\&/g, '')}">
+										<a data-toggle="collapse" href="#collapseTarget${colArr[x].name.replace(/\s|\&|\'/g, '')}" role="button" aria-expanded="false" aria-controls="collapseTarget${colArr[x].name.replace(/\s|\&|\'/g, '')}">
 											<h5 class="card-title">${colArr[x].name}</h5>
 										</a>
 									</div>
@@ -266,7 +244,7 @@
 			`;
 			v.appendChild(item);
 			}
-			sectionNode.appendChild(v).setAttribute("id","collapseTarget" + colArr[x].name.replace(/\s|\&/g, '')); // .classList.add("collapse");
+			sectionNode.appendChild(v).setAttribute("id","collapseTarget" + colArr[x].name.replace(/\s|\&|\'/g, '')); // .classList.add("collapse");
 		}
 	}
 	
