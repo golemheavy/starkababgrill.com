@@ -1,33 +1,10 @@
 body {
-	/*
-	background-image:url(../images/IMG_9284CroppedAndReduced.JPG);
-	background-repeat: no-repeat;
-	background-position: top left;
-	background-size: cover;
-	background-attachment: fixed;
-	background-color: #696969;
-	background-color: antiquewhite;
-	*/
+
 	background-color: currentColor;
 	
 }
 
-/*
 .bigbackimg {
-		background: url(../images/dsc_6808-min.jpg) no-repeat center/cover fixed;
-		background: url(../images/dsc_6843-min.jpg) no-repeat center/cover fixed;
-		background: url(../images/dsc_6868-min.jpg) no-repeat center/cover fixed;
-		background: url(../images/dsc_6872-min1.jpg) no-repeat center/cover fixed;
-		
-	background-image:url(../images/dsc_6872-min1.jpg);
-	background-size: cover;
-	margin-bottom: auto;
-    margin-top: auto;
-}
-*/
-
-.bigbackimg {
-	/* background: url(../images/dsc_6872-min1.jpg) no-repeat center/cover fixed; */
     margin-bottom: auto;
 	margin-bottom: auto;
     margin-top: auto;
@@ -46,8 +23,6 @@ body {
 }
 
 .card {
-	/* background-color: #f5f5dc; */
-	/*background-color: antiquewhite; */
 	background-color: #faebd7aa;
 }
 
@@ -60,7 +35,6 @@ body {
 }
 
 header {
-	/* background-color: #17416d; */
 	background-color: black;
 }
 
@@ -92,12 +66,6 @@ body > header > div > nav > a > img {
 	text-align: center;
 }
 
-/*
-.col-lg-3, .col-md-4, .col-sm-6, .col-xs-12 {
-	padding: 0px 10px;
-}
-*/
-
 .container {
 	max-width: 1260px;
 }
@@ -112,7 +80,6 @@ body > header > div > nav > a > img {
 .footer {
   background-color: #17416d;
   text-align: center;
-  /* margin-top: auto; */
 }
 
 .footer > .container {
@@ -124,14 +91,12 @@ body > header > div > nav > a > img {
 
 	#footer {
 		color: #7c8081;
-		/* padding: 5em 5em 5em 5em; */
 		text-align: center;
 	}
 
 		#footer .copyright {
 			font-size: 0.8em;
 			line-height: 1rem;
-			/*margin-top: 1rem;*/
 		}
 
 			#footer .copyright a {

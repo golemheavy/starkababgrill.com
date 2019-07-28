@@ -113,11 +113,34 @@
 		
 		
 		if (elem.length === 1) {
-			elem[0].style.background = `url(./assets/images/background/${bgimages[Math.floor(Math.random() * bgimages.length)]}) no-repeat center/cover fixed`;
+			//elem[0].style.background = `url(./assets/images/background/${bgimages[Math.floor(Math.random() * bgimages.length)]}) no-repeat center/cover fixed`;
+			//elem[0].style.backgroundImage = "url(./assets/images/background/background5-reduced.JPEG)";
+			elem[0].style.backgroundImage = "url(./assets/images/background/" + bgimages[Math.floor(Math.random() * bgimages.length)] + ")";
+			elem[0].style.backgroundPositionX = "center";
+			elem[0].style.backgroundPositionY = "center";
+			//elem[0].style.backgroundSize = "cover";
+    		elem[0].style.backgroundRepeatX = "no-repeat";
+			elem[0].style.backgroundRepeatY = "no-repeat";
+			elem[0].style.backgroundAttachment = "fixed";
+			elem[0].style.backgroundOrigin = "initial";
+			elem[0].style.backgroundClip = "initial";
+			elem[0].style.backgroundColor = "currentColor";
 		}
 		else {
 			elem[0].style.background = "url(./assets/images/background/background2-reduced.JPEG) no-repeat center/cover fixed";
 		}
+		
+		function myFunction(x) {
+  if (x.matches) { // If media query matches
+    document.getElementsByTagName("body")[0].style.backgroundSize = "unset";
+  } else {
+   document.getElementsByTagName("body")[0].style.backgroundSize = "cover";
+  }
+}
+
+var x = window.matchMedia("(max-width: 700px)");
+myFunction(x); // Call listener function at run time
+x.addListener(myFunction); // Attach listener function on state changes
 		
 		</script>
 	</body>
