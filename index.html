@@ -141,7 +141,7 @@
 		
 		if (elem.length === 1) {
 			elem[0].style.backgroundPositionX = "center";
-			elem[0].style.backgroundPositionY = "center";
+			//elem[0].style.backgroundPositionY = "center";
 			elem[0].style.backgroundSize = "cover";
     		elem[0].style.backgroundRepeat = "no-repeat";
 			
@@ -158,10 +158,10 @@
 			let bodyElem = document.getElementsByTagName("body")[0];
 			if (x.matches && bodyElem) { // If media query matches
 				bodyElem.style.backgroundImage = "url(./assets/images/background/" + bgMobileImages[Math.floor(Math.random() * bgMobileImages.length)] + ")";
-				bodyElem.style.backgroundPositionX = "center";
+				//bodyElem.style.backgroundPositionX = "center";
 				bodyElem.style.backgroundPositionY = "top";
 			} else {
-				bodyElem.style.backgroundPositionX = "center";
+				//bodyElem.style.backgroundPositionX = "center";
 				bodyElem.style.backgroundPositionY = "center";
 				bodyElem.style.backgroundImage = "url(./assets/images/background/" + bgImages[Math.floor(Math.random() * bgImages.length)] + ")";
   }
