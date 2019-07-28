@@ -131,10 +131,10 @@
 		
 		function myFunction(x) {
 			let bodyElem = document.getElementsByTagName("body")[0];
-			if (x.matches) { // If media query matches
+			if (x.matches && bodyElem) { // If media query matches
 				bodyElem.style.backgroundImage = "url(./assets/images/background/" + bgimages[Math.floor(Math.random() * bgimages.length)] + ")";
 				//bodyElem.style.backgroundSize = "auto";
-				bodyElem.style.backgroundAttachment = "scroll";
+				//bodyElem.style.backgroundAttachment = "scroll";
 				bodyElem.style.backgroundPositionX = "center";
 				bodyElem.style.backgroundPositionY = "bottom";
 			} else {
@@ -142,7 +142,7 @@
 				bodyElem.style.backgroundPositionY = "center";
 				bodyElem.style.backgroundImage = "url(./assets/images/background/" + bgimages[Math.floor(Math.random() * bgimages.length)] + ")";
 				//bodyElem.style.backgroundSize = "cover";
-				bodyElem.style.backgroundAttachment = "fixed";
+				//bodyElem.style.backgroundAttachment = "fixed";
   }
 }
 
