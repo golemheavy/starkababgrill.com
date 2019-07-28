@@ -117,7 +117,7 @@
 			//elem[0].style.backgroundImage = "url(./assets/images/background/background5-reduced.JPEG)";
 			elem[0].style.backgroundPositionX = "center";
 			elem[0].style.backgroundPositionY = "center";
-			//elem[0].style.backgroundSize = "cover";
+			elem[0].style.backgroundSize = "cover";
     		elem[0].style.backgroundRepeat = "no-repeat";
 			//elem[0].style.backgroundRepeatY = "no-repeat";
 			elem[0].style.backgroundAttachment = "fixed";
@@ -133,7 +133,7 @@
 			let bodyElem = document.getElementsByTagName("body")[0];
 			if (x.matches) { // If media query matches
 				bodyElem.style.backgroundImage = "url(./assets/images/background/" + bgimages[Math.floor(Math.random() * bgimages.length)] + ")";
-				bodyElem.style.backgroundSize = "auto";
+				//bodyElem.style.backgroundSize = "auto";
 				bodyElem.style.backgroundAttachment = "scroll";
 				bodyElem.style.backgroundPositionX = "center";
 				bodyElem.style.backgroundPositionY = "bottom";
@@ -141,7 +141,7 @@
 				bodyElem.style.backgroundPositionX = "center";
 				bodyElem.style.backgroundPositionY = "center";
 				bodyElem.style.backgroundImage = "url(./assets/images/background/" + bgimages[Math.floor(Math.random() * bgimages.length)] + ")";
-				bodyElem.style.backgroundSize = "cover";
+				//bodyElem.style.backgroundSize = "cover";
 				bodyElem.style.backgroundAttachment = "fixed";
   }
 }
