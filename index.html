@@ -56,11 +56,6 @@
 							<li class="nav-item">
 								<a class="nav-link disabled" href="./users/register.html" tabindex="-1" aria-disabled="true">Register</a>
 							</li -->
-							
-							
-							
-							
-							
 						</ul>
 					</div>
 				</nav>
@@ -122,55 +117,6 @@
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-		<script>
-		
-		var bgImages = [
-			"background2-reduced.JPEG",
-			"background3-reduced.JPEG",
-			"background4-reduced.JPEG",
-			"background5-reduced.JPEG"
-		];
-		
-		var bgMobileImages = [
-			"background3-reduced-mobile.JPEG",
-			"background5-reduced-mobile.JPEG"
-		];
-		
-		var elem = document.getElementsByClassName("bigbackimg2");
-		
-		
-		if (elem.length === 1) {
-			elem[0].style.backgroundPositionX = "center";
-			//elem[0].style.backgroundPositionY = "center";
-			elem[0].style.backgroundSize = "cover";
-    		elem[0].style.backgroundRepeat = "no-repeat";
-			
-			elem[0].style.backgroundAttachment = "fixed";
-			elem[0].style.backgroundOrigin = "initial";
-			elem[0].style.backgroundClip = "initial";
-			elem[0].style.backgroundColor = "currentColor";
-		}
-		else {
-			elem[0].style.background = "currentColor url(./assets/images/background/background2-reduced.JPEG) no-repeat center/cover fixed";
-		}
-		
-		function myFunction(x) {
-			let bodyElem = document.getElementsByTagName("body")[0];
-			if (x.matches && bodyElem) { // If media query matches
-				bodyElem.style.backgroundImage = "url(./assets/images/background/" + bgMobileImages[Math.floor(Math.random() * bgMobileImages.length)] + ")";
-				//bodyElem.style.backgroundPositionX = "center";
-				bodyElem.style.backgroundPositionY = "top";
-			} else {
-				//bodyElem.style.backgroundPositionX = "center";
-				bodyElem.style.backgroundPositionY = "center";
-				bodyElem.style.backgroundImage = "url(./assets/images/background/" + bgImages[Math.floor(Math.random() * bgImages.length)] + ")";
-  }
-}
-
-var x = window.matchMedia("(max-width: 700px)");
-myFunction(x); // Call listener function at run time
-x.addListener(myFunction); // Attach listener function on state changes
-		
-		</script>
+		<script src="./assets/javascript/splashImages.js"></script>
 	</body>
 </html>

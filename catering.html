@@ -15,35 +15,51 @@
 	</head>
 	<body class="d-flex flex-column h-100 bigbackimg2">
 	<header>
-		<div class="container">
-			<nav class="navbar navbar-expand-md navbar-dark">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<a class="navbar-brand" href="./index.html"><img src="./assets/images/newLogoSVGColored3.png" alt="Star Kebab logo"></a>
-				<div class="collapse navbar-collapse" id="navbarCollapse">
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link" href="./menu.html">Order Now <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="./menu.html">Menu</a>
-						</li>
-						<li class="nav-item active">
-							<a class="nav-link" href="./catering.html">Catering</a>
-						</li>
-						<!-- li class="nav-item">
-							<a class="nav-link disabled" href="./users/login.html" tabindex="-1" aria-disabled="true">Log In</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link disabled" href="./users/register.html" tabindex="-1" aria-disabled="true">Register</a>
-						</li -->
-					</ul>
-				</div>
-			</nav>
-		</div>
-	</header>
-	
+			<div class="container">
+				<nav class="navbar navbar-expand-md navbar-dark">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<a class="navbar-brand" href="./index.html"><img src="./assets/images/newLogoSVGColored3.png" alt="Star Kebab logo" ></a>
+					<div class="collapse navbar-collapse" id="navbarCollapse">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="./menu.html">Order Now <span class="sr-only">(current)</span></a>
+							</li>						
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle dropdown-toggle-split" role="button" href="./menu.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<li><a class="dropdown-item" href="./menu.html#Appetizers">Appetizers</a></li>
+									<li><a class="dropdown-item" href="./menu.html#Kababs & Grill">Kababs & Grill</a></li>
+									<li><a class="dropdown-item" href="./menu.html#Vegetarian Entrees">Vegetarian Entrees</a></li>
+									<li><a class="dropdown-item" href="./menu.html#Non-Vegetarian Entrees">Non-Vegetarian Entrees</a></li>
+									<li><a class="dropdown-item" href="./menu.html#Rice & Breads">Rice & Breads</a></li>
+									<li><a class="dropdown-item" href="./menu.html#Rolls & Buns">Rolls & Buns</a></li>
+									<li><a class="dropdown-item" href="./menu.html#Wings">Wings</a></li>
+									<li><a class="dropdown-item" href="./menu.html#Burger Mania">Burger Mania</a></li>
+									<li><a class="dropdown-item" href="./menu.html#Sides">Sides</a></li>
+									<li><a class="dropdown-item" href="./menu.html#Beverages">Beverages</a></li>
+									<li><a class="dropdown-item" href="./menu.html#Desserts">Desserts</a></li>
+									<li><a class="dropdown-item" href="./menu.html#Kids' Menu">Kids' Menu</a></li>
+									<div class="dropdown-divider"></div>
+									<li><a class="dropdown-item active" href="./menu.html">Complete Menu</a></li>
+								</ul>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link active" href="./catering.html">Catering</a>
+							</li>
+							<!-- li class="nav-item">
+								<a class="nav-link disabled" href="./users/login.html" tabindex="-1" aria-disabled="true">Log In</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link disabled" href="./users/register.html" tabindex="-1" aria-disabled="true">Register</a>
+							</li -->
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
 		<main role="main" class="flex-shrink-0 bigbackimg">
 			<div class="container padtop">
 				<div class="row">
@@ -100,25 +116,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script>
-		
-		var bgimages = [
-			"background2-reduced.JPEG",
-			"background3-reduced.JPEG",
-			"background4-reduced.JPEG",
-			"background5-reduced.JPEG"
-		];
-		
-		var elem = document.getElementsByClassName("bigbackimg2");
-		
-		
-		if (elem.length === 1) {
-			elem[0].style.background = `url(./assets/images/background/${bgimages[Math.floor(Math.random() * bgimages.length)]}) no-repeat center/cover fixed`;
-		}
-		else {
-			elem[0].style.background = "url(./assets/images/background/background2-reduced.JPEG) no-repeat center/cover fixed";
-		}
-		
-	</script>
+	<script src="./assets/javascript/splashImages.js"></script>
 	</body>
 </html>
