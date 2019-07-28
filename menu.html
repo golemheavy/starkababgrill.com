@@ -226,7 +226,9 @@
 			z.innerHTML = `<div class="card menu-card" id="${colArr[x].name}">
 								<div class="row">
 									<div class="col">
-										<h5 class="card-title">${colArr[x].name}</h5>
+										<a data-toggle="collapse" href="#collapseTarget${colArr[x].name.replace(/\s|\&/g, '')}" role="button" aria-expanded="false" aria-controls="collapseTarget${colArr[x].name.replace(/\s|\&/g, '')}">
+											<h5 class="card-title">${colArr[x].name}</h5>
+										</a>
 									</div>
 								</div>
 							</div>`;
@@ -264,7 +266,7 @@
 			`;
 			v.appendChild(item);
 			}
-			sectionNode.appendChild(v);
+			sectionNode.appendChild(v).setAttribute("id","collapseTarget" + colArr[x].name.replace(/\s|\&/g, '')); // .classList.add("collapse");
 		}
 	}
 	
