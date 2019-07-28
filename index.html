@@ -118,8 +118,8 @@
 			elem[0].style.backgroundPositionX = "center";
 			elem[0].style.backgroundPositionY = "center";
 			//elem[0].style.backgroundSize = "cover";
-    		elem[0].style.backgroundRepeatX = "no-repeat";
-			elem[0].style.backgroundRepeatY = "no-repeat";
+    		elem[0].style.backgroundRepeat = "no-repeat";
+			//elem[0].style.backgroundRepeatY = "no-repeat";
 			elem[0].style.backgroundAttachment = "fixed";
 			elem[0].style.backgroundOrigin = "initial";
 			elem[0].style.backgroundClip = "initial";
@@ -134,6 +134,7 @@
 			if (x.matches) { // If media query matches
 				bodyElem.style.backgroundImage = "url(./assets/images/background/" + bgimages[Math.floor(Math.random() * bgimages.length)] + ")";
 				bodyElem.style.backgroundSize = "auto";
+				elem[0].style.backgroundAttachment = "scroll";
 			} else {
 				bodyElem.style.backgroundImage = "url(./assets/images/background/" + bgimages[Math.floor(Math.random() * bgimages.length)] + ")";
 				bodyElem.style.backgroundSize = "cover";
