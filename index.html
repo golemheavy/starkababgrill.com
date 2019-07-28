@@ -131,10 +131,20 @@
 		}
 		
 		function myFunction(x) {
-  if (x.matches) { // If media query matches
-    document.getElementsByTagName("body")[0].style.backgroundSize = "unset";
-  } else {
-   document.getElementsByTagName("body")[0].style.backgroundSize = "cover";
+			let bodyElem = document.getElementsByTagName("body")[0];
+			if (x.matches) { // If media query matches
+				bodyElem.style.backgroundSize = "auto";
+			} else {
+				bodyElem.style.backgroundImage = "url(./assets/images/background/" + bgimages[Math.floor(Math.random() * bgimages.length)] + ")";
+				bodyElem.style.backgroundPositionX = "center";
+				bodyElem.style.backgroundPositionY = "center";
+				bodyElem.style.backgroundSize = "cover";
+				bodyElem.style.backgroundRepeatX = "no-repeat";
+				bodyElem.style.backgroundRepeatY = "no-repeat";
+				bodyElem.style.backgroundAttachment = "fixed";
+				bodyElem.style.backgroundOrigin = "initial";
+				bodyElem.style.backgroundClip = "initial";
+				bodyElem.style.backgroundColor = "currentColor";
   }
 }
 
