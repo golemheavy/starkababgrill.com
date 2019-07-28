@@ -27,8 +27,8 @@
 							<li class="nav-item active">
 								<a class="nav-link" href="./menu.html">Order Now <span class="sr-only">(current)</span></a>
 							</li>						
-							<li class="nav-item dropdown"> 
-								<a class="nav-link dropdown-toggle" href="./menu.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle dropdown-toggle-split" role="button" href="./menu.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 									<li><a class="dropdown-item" href="./menu.html#Appetizers">Appetizers</a></li>
 									<li><a class="dropdown-item" href="./menu.html#Kababs & Grill">Kababs & Grill</a></li>
@@ -42,9 +42,11 @@
 									<li><a class="dropdown-item" href="./menu.html#Beverages">Beverages</a></li>
 									<li><a class="dropdown-item" href="./menu.html#Desserts">Desserts</a></li>
 									<li><a class="dropdown-item" href="./menu.html#Kids' Menu">Kids' Menu</a></li>
+									<div class="dropdown-divider"></div>
+									<li><a class="dropdown-item active" href="./menu.html">Complete Menu</a></li>
 								</ul>
 							</li>
-							</li>
+							
 							<li class="nav-item">
 								<a class="nav-link" href="./catering.html">Catering</a>
 							</li>
@@ -122,11 +124,15 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<script>
 		
-		var bgimages = [
+		var bgImages = [
 			"background2-reduced.JPEG",
 			"background3-reduced.JPEG",
 			"background4-reduced.JPEG",
 			"background5-reduced.JPEG"
+		];
+		
+		var bgMobileImages = [
+			"background3-reduced-mobile.JPEG"
 		];
 		
 		var elem = document.getElementsByClassName("bigbackimg2");
@@ -150,13 +156,13 @@
 		function myFunction(x) {
 			let bodyElem = document.getElementsByTagName("body")[0];
 			if (x.matches && bodyElem) { // If media query matches
-				bodyElem.style.backgroundImage = "url(./assets/images/background/" + bgimages[Math.floor(Math.random() * bgimages.length)] + ")";
+				bodyElem.style.backgroundImage = "url(./assets/images/background/" + bgMobileImages[Math.floor(Math.random() * bgMobileImages.length)] + ")";
 				bodyElem.style.backgroundPositionX = "center";
-				bodyElem.style.backgroundPositionY = "bottom";
+				bodyElem.style.backgroundPositionY = "top";
 			} else {
 				bodyElem.style.backgroundPositionX = "center";
 				bodyElem.style.backgroundPositionY = "center";
-				bodyElem.style.backgroundImage = "url(./assets/images/background/" + bgimages[Math.floor(Math.random() * bgimages.length)] + ")";
+				bodyElem.style.backgroundImage = "url(./assets/images/background/" + bgImages[Math.floor(Math.random() * bgImages.length)] + ")";
   }
 }
 
