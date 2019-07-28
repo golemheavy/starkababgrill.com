@@ -133,7 +133,16 @@
 		function myFunction(x) {
 			let bodyElem = document.getElementsByTagName("body")[0];
 			if (x.matches) { // If media query matches
+				bodyElem.style.backgroundImage = "url(./assets/images/background/" + bgimages[Math.floor(Math.random() * bgimages.length)] + ")";
+				bodyElem.style.backgroundPositionX = "center";
+				bodyElem.style.backgroundPositionY = "center";
 				bodyElem.style.backgroundSize = "auto";
+				bodyElem.style.backgroundRepeatX = "no-repeat";
+				bodyElem.style.backgroundRepeatY = "no-repeat";
+				bodyElem.style.backgroundAttachment = "fixed";
+				bodyElem.style.backgroundOrigin = "initial";
+				bodyElem.style.backgroundClip = "initial";
+				bodyElem.style.backgroundColor = "currentColor";
 			} else {
 				bodyElem.style.backgroundImage = "url(./assets/images/background/" + bgimages[Math.floor(Math.random() * bgimages.length)] + ")";
 				bodyElem.style.backgroundPositionX = "center";
