@@ -115,7 +115,6 @@
 		if (elem.length === 1) {
 			//elem[0].style.background = `url(./assets/images/background/${bgimages[Math.floor(Math.random() * bgimages.length)]}) no-repeat center/cover fixed`;
 			//elem[0].style.backgroundImage = "url(./assets/images/background/background5-reduced.JPEG)";
-			elem[0].style.backgroundImage = "url(./assets/images/background/" + bgimages[Math.floor(Math.random() * bgimages.length)] + ")";
 			elem[0].style.backgroundPositionX = "center";
 			elem[0].style.backgroundPositionY = "center";
 			//elem[0].style.backgroundSize = "cover";
@@ -134,26 +133,10 @@
 			let bodyElem = document.getElementsByTagName("body")[0];
 			if (x.matches) { // If media query matches
 				bodyElem.style.backgroundImage = "url(./assets/images/background/" + bgimages[Math.floor(Math.random() * bgimages.length)] + ")";
-				bodyElem.style.backgroundPositionX = "center";
-				bodyElem.style.backgroundPositionY = "center";
 				bodyElem.style.backgroundSize = "auto";
-				bodyElem.style.backgroundRepeatX = "no-repeat";
-				bodyElem.style.backgroundRepeatY = "no-repeat";
-				bodyElem.style.backgroundAttachment = "fixed";
-				bodyElem.style.backgroundOrigin = "initial";
-				bodyElem.style.backgroundClip = "initial";
-				bodyElem.style.backgroundColor = "currentColor";
 			} else {
 				bodyElem.style.backgroundImage = "url(./assets/images/background/" + bgimages[Math.floor(Math.random() * bgimages.length)] + ")";
-				bodyElem.style.backgroundPositionX = "center";
-				bodyElem.style.backgroundPositionY = "center";
 				bodyElem.style.backgroundSize = "cover";
-				bodyElem.style.backgroundRepeatX = "no-repeat";
-				bodyElem.style.backgroundRepeatY = "no-repeat";
-				bodyElem.style.backgroundAttachment = "fixed";
-				bodyElem.style.backgroundOrigin = "initial";
-				bodyElem.style.backgroundClip = "initial";
-				bodyElem.style.backgroundColor = "currentColor";
   }
 }
 
