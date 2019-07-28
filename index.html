@@ -134,10 +134,11 @@
 			if (x.matches) { // If media query matches
 				bodyElem.style.backgroundImage = "url(./assets/images/background/" + bgimages[Math.floor(Math.random() * bgimages.length)] + ")";
 				bodyElem.style.backgroundSize = "auto";
-				elem[0].style.backgroundAttachment = "scroll";
+				bodyElem.style.backgroundAttachment = "scroll";
 			} else {
 				bodyElem.style.backgroundImage = "url(./assets/images/background/" + bgimages[Math.floor(Math.random() * bgimages.length)] + ")";
 				bodyElem.style.backgroundSize = "cover";
+				bodyElem.style.backgroundAttachment = "fixed";
   }
 }
 
