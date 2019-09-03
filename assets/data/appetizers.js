@@ -10,24 +10,28 @@ const appetizers = [
 		"price": 3.99
 	},
 	{
-		"name": "Chicken 65  (Spicy!)",
+		"name": "Chicken 65",
 		"description": "Tender pieces of spice-marinated chicken deep-fried and then sauteed in more spices.",
-		"price": 9.99
+		"price": 9.99,
+		"spicy": true
 	},
 	{
-		"name": "Chilli Chicken (Spicy!)",
+		"name": "Chilli Chicken",
 		"description": "Tender pieces of chicken sauteed in spicy chillies and tongue-searing spices.",
-		"price": 9.99
+		"price": 9.99,
+		"spicy": true
 	},
 	{
-		"name": "Chilli Paneer (Spicy!)",
+		"name": "Chilli Paneer",
 		"description": "Tender pieces of paneer (Indian cottage cheese) sauteed in spicy chillies and tongue-searing spices.",
-		"price": 9.99
+		"price": 9.99,
+		"spicy": true
 	},
 	{
-		"name": "Paneer 65  (Spicy!)",
+		"name": "Paneer 65",
 		"description": "Tender pieces of spice-marinated paneer (Indian cottage cheese) deep-fried and then sauteed in more spices.",
-		"price": 9.99
+		"price": 9.99,
+		"spicy": true
 	},
 	{
 		"name": "Mughlai Paratha",
@@ -37,6 +41,7 @@ const appetizers = [
 	{
 		"name": "Mirchi Paratha",
 		"description": "Crisp, flaky flatbread stuffed with tongue-tickling mixture of green chillies and Indian spices.",
-		"price": 9.99
+		"price": 9.99,
+		"spicy": true
 	}
 ];

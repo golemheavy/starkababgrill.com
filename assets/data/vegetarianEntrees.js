@@ -32,6 +32,7 @@ const vegetarianEntrees = [
 	{
 		"name": "Kadai Paneer (Spicy!)",
 		"description": "Lucsious cubes of paneer (Indian cottage cheese) simmered in a spicy karahi sauce made of tomatoes and spices.",
-		"price": 12.99
+		"price": 12.99,
+		"spicy": true
 	}
 ];

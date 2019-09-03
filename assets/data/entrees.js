@@ -45,14 +45,16 @@ const entrees = [
 		"price": 12.99
 	},
 	{
-		"name": "Masala Shrimp (Spicy!)",
+		"name": "Masala Shrimp",
 		"description": "Succulent shrimp cooked in a medium-spiced sauce of fresh tomatoes and spices.",
-		"price": 14.99
+		"price": 14.99,
+		"spicy": true
 	},
 	{
-		"name": "Masala Fish (Spicy!)",
+		"name": "Masala Fish",
 		"description": "Luscious pieces of fish cooked in a spicy sauce of fresh tomatoes and spices.",
-		"price": 14.99
+		"price": 14.99,
+		"spicy": true
 	},
 	{
 		"name": "Butter Chicken",

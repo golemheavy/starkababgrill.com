@@ -57,7 +57,7 @@ const riceAndBreads = [
 	{
 		"name": "Paratha",
 		"description": "Buttery, flaky flatbread.",
-		"price": 2.49
+		"price": 1.99
 	},
 	{
 		"name": "Naan",
