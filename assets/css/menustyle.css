@@ -1,3 +1,12 @@
+header {
+	background-color: #17416d;
+	/* background-color: black; */
+}
+
+main {
+	background-color: black;
+}
+
 .item-style {
 	text-align: left;
 	margin-left: 15px;
@@ -45,6 +54,7 @@ p {
 	margin-bottom: 0;
 }
 
-body {
+.card {
 	line-height: 1.4;
+	background-color: #faebd7;
 }

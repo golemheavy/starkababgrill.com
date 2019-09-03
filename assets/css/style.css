@@ -1,33 +1,56 @@
 body {
-	/*
-	background-image:url(../images/IMG_9284CroppedAndReduced.JPG);
-	background-repeat: no-repeat;
-	background-position: top left;
-	background-size: cover;
-	background-attachment: fixed;
-	*/
-	background-color: #696969;
+
+	background-color: currentColor;
+	
+}
+
+.bigbackimg {
+	margin-bottom: auto;
+    margin-top: auto;
+}
+
+.col-right {
+    display:inline-block;
+    float:none;
+    text-align: right;
+}
+
+.col-left {
+    display:inline-block;
+    float:none;
+    text-align: left;
 }
 
 .card {
-	background-color: #f5f5dc;
+	background-color: #ffffffaa;
+}
+
+.card-body {
+	text-align: center;
+}
+
+.navbar-brand {
+	margin: auto;
 }
 
 header {
-	background-color: #00376ecc;
+	background-color: black;
 }
 
 .item-style {
 	font-weight:500;
 }
 
+.contact-panel {
+	background-color: black;
+}
 
 .nav-item {
 	font-size:1.2rem;
 }
 
 body > header > div > nav > a > img {
-	width: 220px;
+	width: 10rem;
 	height: auto;
 }
 
@@ -42,21 +65,19 @@ body > header > div > nav > a > img {
 	text-align: center;
 }
 
-.col-lg-3, .col-md-4, .col-sm-6, .col-xs-12 {
-	padding: 0px 10px;
-}
-
 .container {
 	max-width: 1260px;
 }
 
 .padtop {
 	padding-top: 2rem;
+	padding-bottom: 2rem;
+	margin-top: 2rem;
 	margin-bottom: 2rem;
 }
 
 .footer {
-  background-color: #00376ecc;
+  background-color: #17416d;
   text-align: center;
 }
 
@@ -69,14 +90,12 @@ body > header > div > nav > a > img {
 
 	#footer {
 		color: #7c8081;
-		padding: 5em 5em 5em 5em;
 		text-align: center;
 	}
 
 		#footer .copyright {
 			font-size: 0.8em;
 			line-height: 1rem;
-			margin-top: 1rem;
 		}
 
 			#footer .copyright a {
@@ -263,6 +282,10 @@ a {
     padding-left: 10px;
 }
 
+a.icon {
+	margin: .5rem;
+}
+
 .no-indent {
 	text-indent: 0;
 }
@@ -273,8 +296,15 @@ p {
 }
 
 
+
 .col-12 {
 	max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
+}
+
+.halal-seal {
+	width: 5rem;
+	height:auto;
+	margin: auto;
 }
