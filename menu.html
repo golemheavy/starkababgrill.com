@@ -138,6 +138,8 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<script>
 		
+		let bodyElement = document.getElementsByTagName("body")[0];
+		
 		const columns = [
 		[{
 				name:"Appetizers",
@@ -281,14 +283,17 @@
 				let thisElem = document.getElementById("modal-" + colArr[x].name.replace(/\s|\&|\'/g, ''));
 				if (thisElem.style.display !== "block") {
 					thisElem.style.display = "block";
+					bodyElement.style.overflow="hidden";
 				} else if (thisElem.style.display == "block") {
 					thisElem.style.display = "none";
+					bodyElement.style.overflow="auto";
 				}
 				
 			}
 			window.onclick = function(event) {
 				if (event.target.id.startsWith("modal-")) {
 					document.getElementById(event.target.id).style.display = "none";
+					bodyElement.style.overflow="auto";
 				}
 			}
 		}
