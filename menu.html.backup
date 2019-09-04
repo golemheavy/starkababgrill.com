@@ -26,7 +26,6 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" href="./assets/css/style.css">
 		<link rel="stylesheet" href="./assets/css/menustyle.css">
-		<link rel="stylesheet" href="./assets/css/modal.css">
 
 		<title>Our Menu</title>
 	</head>
@@ -239,21 +238,16 @@
 				imageNode.appendChild(image);
 			}
 			
-			//let sectionNode = document.getElementById(colArr[x].name);
-			let modalWindow = document.createElement('div');
-			modalWindow.classList.add("modal");
-			modalWindow.setAttribute("id","modal-" + colArr[x].name.replace(/\s|\&|\'/g, ''));
-			
-			let modalContent = document.createElement('div');
-			modalContent.classList.add("modal-content");
-			modalContent.innerHTML = `<span class="close">&times;</span>`;
-			
+			let sectionNode = document.getElementById(colArr[x].name);
+			let v = document.createElement('div');
+			v.classList.add("collapse");
+			//v.setAttribute("id","collapseTarget");
 			for (let y in colArr[x].items) {
+			//let sectionNode = document.getElementById(colArr[x].name);
 			let item = document.createElement('div');
 			let spicytag = "";
 			if (colArr[x].items[y].spicy === true) spicytag = '<span style="color:red;">(Spicy!)</span>';
-			item.innerHTML = `
-								<div class="row">
+			item.innerHTML = `	<div class="row">
 									<div class="col-8 col-auto item-style">
 										<p>${colArr[x].items[y].name} ${spicytag}</p>
 									</div>
@@ -266,34 +260,16 @@
 										<p class="no-indent">${colArr[x].items[y].description}</p>
 									</div>
 								</div>
-							
 			`;
-			modalContent.appendChild(item);
+			v.appendChild(item);
 			}
-			modalWindow.appendChild(modalContent);
-			document.getElementById(colArr[x].name).appendChild(modalWindow); //; .setAttribute("id","collapseTarget" + colArr[x].name.replace(/\s|\&|\'/g, '')); // .classList.add("collapse");
-			var btn = document.getElementById(`${colArr[x].name}`);
-			btn.onclick = function() {
-				let thisElem = document.getElementById("modal-" + colArr[x].name.replace(/\s|\&|\'/g, ''));
-				if (thisElem.style.display !== "block") {
-					thisElem.style.display = "block";
-				} else if (thisElem.style.display == "block") {
-					thisElem.style.display = "none";
-				}
-				
-			}
-			window.onclick = function(event) {
-				if (event.target.id.startsWith("modal-")) {
-					document.getElementById(event.target.id).style.display = "none";
-				}
-			}
+			sectionNode.appendChild(v).setAttribute("id","collapseTarget" + colArr[x].name.replace(/\s|\&|\'/g, '')); // .classList.add("collapse");
 		}
 	}
 	
 	columns.map((x, ind) => {
 		buildColumn(x,ind);
 	});
-	
 
 		</script>
 	</body>

@@ -146,63 +146,6 @@
 					url:"./assets/images/Chicken65.jpg",
 					alt:"Chicken 65"
 				}
-		}],[{
-				name:"Kababs & Grill",
-				items:kababsAndGrill,
-				image: {
-					url:"./assets/images/MasalaBotiChicken.jpg",
-					alt:"Masala Chicken Boti"
-				}
-		}],[{
-				name:"Vegetarian Entrees",
-				items:vegetarianEntrees,
-				image: {
-					url:"./assets/images/TarkaDaal.jpg",
-					alt:"Tarka Daal"
-				}		
-		}],[{
-				name:"Non-Vegetarian Entrees",
-				items:entrees,
-				image: {
-					url:"./assets/images/ButterChicken.jpg",
-					alt:"Butter Chicken"
-				}
-		}],[{
-				name:"Rice & Breads",
-				items:riceAndBreads,
-				image: {
-					url:"./assets/images/GoatBiryani.jpg",
-					alt:"Goat Biryani"
-				}
-		}],[{
-				name:"Rolls & Buns",
-				items:rollsAndBuns,
-				image: {
-					url:"./assets/images/ChickenBotiRoll.jpg",
-					alt:"Chicken Boti Roll"
-				}	
-		}],[{
-				name:"Wings",
-				items:wings,
-				image: {
-					url:"./assets/images/PriyankasMasalaWings.jpg",
-					alt:"Priyanka's Masala Wings"
-					}
-		}],[{
-				name:"Burger Mania",
-				items:burgerMania
-		},{
-				name:"Kids' Menu",
-				items:kidsMenu
-		},{
-				name:"Sides",
-				items:sides
-		}],[{
-				name:"Beverages",
-				items:beverages
-		},{
-				name:"Desserts",
-				items:desserts
 		}]];
 		
 
@@ -219,15 +162,17 @@
 			
 			let nodeVar = document.getElementById("column-"+ind);		
 			let z = document.createElement('div');
-			z.innerHTML = `<div class="card menu-card" id="${colArr[x].name}">
+			z.innerHTML = `<button id="myBtn">
+							<div class="card menu-card" id="${colArr[x].name}">
 								<div class="row">
 									<div class="col">
-										<a data-toggle="collapse" href="#collapseTarget${colArr[x].name.replace(/\s|\&|\'/g, '')}" role="button" aria-expanded="false" aria-controls="collapseTarget${colArr[x].name.replace(/\s|\&|\'/g, '')}">
+										<a href="#">
 											<h5 class="card-title">${colArr[x].name}</h5>
 										</a>
 									</div>
 								</div>
-							</div>`;
+							</div>
+							</button>`;
 			nodeVar.appendChild(z);
 			let imageNode = document.getElementById(colArr[x].name);
 			
@@ -239,54 +184,51 @@
 				imageNode.appendChild(image);
 			}
 			
-			//let sectionNode = document.getElementById(colArr[x].name);
-			let modalWindow = document.createElement('div');
-			modalWindow.classList.add("modal");
-			modalWindow.setAttribute("id","modal-" + colArr[x].name.replace(/\s|\&|\'/g, ''));
-			
-			let modalContent = document.createElement('div');
-			modalContent.classList.add("modal-content");
-			modalContent.innerHTML = `<span class="close">&times;</span>`;
-			
-			for (let y in colArr[x].items) {
-			let item = document.createElement('div');
+			let sectionNode = document.getElementById(colArr[x].name);
+			let v = document.createElement('div');
+			v.classList.add("modal");
+			v.setAttribute("id","myModal");
+			let w = document.createElement('div');
+			v.classList.add("modal-content");
+			v.appendChild(w);
+			let y = document.createElement('div');
+			y.classList.add("modal-header");
+			w.appendChild(y);
+			let modalwindow = document.createElement('div');
+			modalwindow.innerHTML = `
+			<span class="close">&times;</span>
+				<h2>Appetizers</h2>
+				</div>
+    <div class="modal-body">`;
+	
+	for (let p in colArr[x].items) {
 			let spicytag = "";
-			if (colArr[x].items[y].spicy === true) spicytag = '<span style="color:red;">(Spicy!)</span>';
-			item.innerHTML = `
-								<div class="row">
+			if (colArr[x].items[p].spicy === true) spicytag = '<span style="color:red;">(Spicy!)</span>';
+			let item = document.createElement('div');
+			item.innerHTML = `	<div class="row">
 									<div class="col-8 col-auto item-style">
-										<p>${colArr[x].items[y].name} ${spicytag}</p>
+										<p>${colArr[x].items[p].name} ${spicytag}</p>
 									</div>
 									<div class="col col-mr-auto price-style">
-										<p>${colArr[x].items[y].price}</p>
+										<p>${colArr[x].items[p].price}</p>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col desc-style">
-										<p class="no-indent">${colArr[x].items[y].description}</p>
+										<p class="no-indent">${colArr[x].items[p].description}</p>
 									</div>
 								</div>
-							
-			`;
-			modalContent.appendChild(item);
-			}
-			modalWindow.appendChild(modalContent);
-			document.getElementById(colArr[x].name).appendChild(modalWindow); //; .setAttribute("id","collapseTarget" + colArr[x].name.replace(/\s|\&|\'/g, '')); // .classList.add("collapse");
-			var btn = document.getElementById(`${colArr[x].name}`);
-			btn.onclick = function() {
-				let thisElem = document.getElementById("modal-" + colArr[x].name.replace(/\s|\&|\'/g, ''));
-				if (thisElem.style.display !== "block") {
-					thisElem.style.display = "block";
-				} else if (thisElem.style.display == "block") {
-					thisElem.style.display = "none";
-				}
-				
-			}
-			window.onclick = function(event) {
-				if (event.target.id.startsWith("modal-")) {
-					document.getElementById(event.target.id).style.display = "none";
-				}
-			}
+							</div>
+							<div class="modal-footer">
+								<h3>Modal Footer</h3>
+							</div>`;
+					
+		
+			y.appendChild(item);
+	}
+	
+			sectionNode.appendChild(y);
+			
 		}
 	}
 	
@@ -294,6 +236,31 @@
 		buildColumn(x,ind);
 	});
 	
+	// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
 		</script>
 	</body>
