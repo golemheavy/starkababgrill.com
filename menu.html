@@ -246,7 +246,11 @@
 			
 			let modalContent = document.createElement('div');
 			modalContent.classList.add("modal-content");
-			modalContent.innerHTML = `<span class="close">&times;</span>`;
+			modalContent.innerHTML = `<div class="modal-header">
+										<span class="close">&times;</span>
+										<h2>${colArr[x].name}</h2>
+									</div>
+									<div class="modal-body">`;
 			
 			for (let y in colArr[x].items) {
 			let item = document.createElement('div');
