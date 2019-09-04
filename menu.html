@@ -284,9 +284,6 @@
 				if (thisElem.style.display !== "block") {
 					thisElem.style.display = "block";
 					bodyElement.style.overflow="hidden";
-					bodyElement.ontouchstart = (e) => {
-						e.preventDefault();
-					};
 				} else if (thisElem.style.display == "block") {
 					thisElem.style.display = "none";
 					bodyElement.style.overflow="auto";
@@ -305,6 +302,11 @@
 	columns.map((x, ind) => {
 		buildColumn(x,ind);
 	});
+	
+	
+	bodyElement.ontouchstart = (e) => {
+						if (bodyElement.style.overflow == "hidden")	e.preventDefault();
+					};
 	
 
 		</script>
