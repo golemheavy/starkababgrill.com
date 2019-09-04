@@ -1,4 +1,6 @@
-/* body {font-family: Arial, Helvetica, sans-serif;} */
+body {
+	-webkit-overflow-scrolling: touch;
+}
 
 /* The Modal (background) */
 .modal {
