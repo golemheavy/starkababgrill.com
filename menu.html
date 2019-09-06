@@ -1,4 +1,3 @@
-
 <html lang="en" class="h-100">
 	<head>
 		<!-- Required meta tags -->
@@ -26,6 +25,7 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" href="./assets/css/style.css">
 		<link rel="stylesheet" href="./assets/css/menustyle.css">
+		<link rel="stylesheet" href="./assets/css/modal.css">
 
 		<title>Our Menu</title>
 	</head>
@@ -46,17 +46,17 @@
 								<a class="nav-link active dropdown-toggle dropdown-toggle-split" role="button" href="./menu.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 									<li><a class="dropdown-item" href="./menu.html#Appetizers">Appetizers</a></li>
-									<li><a class="dropdown-item" href="./menu.html#Kababs & Grill">Kababs & Grill</a></li>
-									<li><a class="dropdown-item" href="./menu.html#Vegetarian Entrees">Vegetarian Entrees</a></li>
-									<li><a class="dropdown-item" href="./menu.html#Non-Vegetarian Entrees">Non-Vegetarian Entrees</a></li>
-									<li><a class="dropdown-item" href="./menu.html#Rice & Breads">Rice & Breads</a></li>
-									<li><a class="dropdown-item" href="./menu.html#Rolls & Buns">Rolls & Buns</a></li>
+									<li><a class="dropdown-item" href="./menu.html#KababsGrill">Kababs & Grill</a></li>
+									<li><a class="dropdown-item" href="./menu.html#VegetarianEntrees">Vegetarian Entrees</a></li>
+									<li><a class="dropdown-item" href="./menu.html#Non-VegetarianEntrees">Non-Vegetarian Entrees</a></li>
+									<li><a class="dropdown-item" href="./menu.html#RiceBreads">Rice & Breads</a></li>
+									<li><a class="dropdown-item" href="./menu.html#RollsBuns">Rolls & Buns</a></li>
 									<li><a class="dropdown-item" href="./menu.html#Wings">Wings</a></li>
-									<li><a class="dropdown-item" href="./menu.html#Burger Mania">Burger Mania</a></li>
+									<li><a class="dropdown-item" href="./menu.html#BurgerMania">Burger Mania</a></li>
 									<li><a class="dropdown-item" href="./menu.html#Sides">Sides</a></li>
 									<li><a class="dropdown-item" href="./menu.html#Beverages">Beverages</a></li>
 									<li><a class="dropdown-item" href="./menu.html#Desserts">Desserts</a></li>
-									<li><a class="dropdown-item" href="./menu.html#Kids' Menu">Kids' Menu</a></li>
+									<li><a class="dropdown-item" href="./menu.html#KidsMenu">Kids' Menu</a></li>
 									<div class="dropdown-divider"></div>
 									<li><a class="dropdown-item active" href="./menu.html">Complete Menu</a></li>
 								</ul>
@@ -137,6 +137,8 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<script>
 		
+		let bodyElement = document.getElementsByTagName("body")[0];
+		
 		const columns = [
 		[{
 				name:"Appetizers",
@@ -215,20 +217,20 @@
 			
 		for (let x in colArr) {
 			
-			
 			let nodeVar = document.getElementById("column-"+ind);		
 			let z = document.createElement('div');
-			z.innerHTML = `<div class="card menu-card" id="${colArr[x].name}">
+			let nodeId = colArr[x].name.replace(/\s|\&|\'/g, '');
+			z.innerHTML = `<div class="card menu-card" id=${nodeId}>
 								<div class="row">
 									<div class="col">
-										<a data-toggle="collapse" href="#collapseTarget${colArr[x].name.replace(/\s|\&|\'/g, '')}" role="button" aria-expanded="false" aria-controls="collapseTarget${colArr[x].name.replace(/\s|\&|\'/g, '')}">
+										<a href="#${nodeId}" role="button">
 											<h5 class="card-title">${colArr[x].name}</h5>
 										</a>
 									</div>
 								</div>
 							</div>`;
 			nodeVar.appendChild(z);
-			let imageNode = document.getElementById(colArr[x].name);
+			let imageNode = document.getElementById(nodeId);
 			
 			if (typeof colArr[x].image !== "undefined") {
 				let image = document.createElement('div');
@@ -238,39 +240,124 @@
 				imageNode.appendChild(image);
 			}
 			
-			let sectionNode = document.getElementById(colArr[x].name);
-			let v = document.createElement('div');
-			v.classList.add("collapse");
-			//v.setAttribute("id","collapseTarget");
-			for (let y in colArr[x].items) {
 			//let sectionNode = document.getElementById(colArr[x].name);
-			let item = document.createElement('div');
-			let spicytag = "";
-			if (colArr[x].items[y].spicy === true) spicytag = '<span style="color:red;">(Spicy!)</span>';
-			item.innerHTML = `	<div class="row">
-									<div class="col-8 col-auto item-style">
-										<p>${colArr[x].items[y].name} ${spicytag}</p>
+			let modalWindow = document.createElement('div');
+			modalWindow.classList.add("modal");
+			modalWindow.setAttribute("id","modal-" + colArr[x].name.replace(/\s|\&|\'/g, ''));
+			
+			let modalContent = document.createElement('div');
+			modalContent.classList.add("modal-content");
+			modalContent.innerHTML = `<div class="modal-header">
+										<span class="close">&times;</span>
+										<h2>${colArr[x].name}</h2>
 									</div>
-									<div class="col col-mr-auto price-style">
-										<p>${colArr[x].items[y].price}</p>
+									<div class="modal-body">`;
+			
+			for (let y in colArr[x].items) {
+				let item = document.createElement('div');
+				let spicytag = "";
+				if (colArr[x].items[y].spicy === true) spicytag = '<span style="color:red;">(Spicy!)</span>';
+				item.innerHTML = `	<div class="row">
+										<div class="col-8 col-auto item-style">
+											<p>${colArr[x].items[y].name} ${spicytag}</p>
+										</div>
+										<div class="col col-mr-auto price-style">
+											<p>${colArr[x].items[y].price}</p>
+										</div>
 									</div>
-								</div>
-								<div class="row">
-									<div class="col desc-style">
-										<p class="no-indent">${colArr[x].items[y].description}</p>
-									</div>
-								</div>
-			`;
-			v.appendChild(item);
+									<div class="row">
+										<div class="col desc-style">
+											<p class="no-indent">${colArr[x].items[y].description}</p>
+										</div>
+									</div>`;
+								
+				modalContent.appendChild(item);
 			}
-			sectionNode.appendChild(v).setAttribute("id","collapseTarget" + colArr[x].name.replace(/\s|\&|\'/g, '')); // .classList.add("collapse");
+			
+			modalWindow.appendChild(modalContent);
+			document.getElementById(nodeId).appendChild(modalWindow); //; .setAttribute("id","collapseTarget" + colArr[x].name.replace(/\s|\&|\'/g, '')); // .classList.add("collapse");
+			
+			var btn = document.getElementById(nodeId);
+			
+			btn.onclick = function() {
+				if (modalWindow == currentModal || currentModal === null) toggleModal(modalWindow);
+				else if (currentModal && modalWindow) {
+					toggleModal(currentModal);
+					toggleModal(modalWindow);
+				}
+			}
 		}
 	}
 	
 	columns.map((x, ind) => {
 		buildColumn(x,ind);
 	});
-
+	
+	let currentModal;  // this global variable will story the currently activated modal, if any. There shouldn't be more than a single one active at a given time.
+	
+	// when arriving from the nav menu, toggle correct modal for indicated location fragment hash
+	if (location.hash) hashHandler();
+	
+	function toggleModal(modalNode) {
+	
+	// if currentModal exists and is a modal, and if modalNode exists and is a modal, and if they aren't the same node, toggle currentModal off, toggle modalNode on, and set currentModal =
+	// if they are the same node then this should only happen if the modal is currently activated, just toggle it off and set current modal equal to null modalNode.
+	// if modalNode exists and is a modal but currentModal doesn't exist, this should only happen if the modal node is not active. activate modal node and set current node equal to it.
+		
+		if (modalNode && modalNode.id.startsWith("modal-")) {
+			if (currentModal && currentModal.id.startsWith("modal-")) {
+				if (modalNode === currentModal && modalNode.style && modalNode.style.display == "block") {
+					modalNode.style.display = "none";
+					bodyElement.style.overflow="auto";
+					currentModal = null;
+				} else { //currentNode and Modal Node aren't equal
+					modalNode.style.display = "block";
+					bodyElement.style.overflow="hidden";
+					currentModal = modalNode;
+				}
+			} else { // this should only happen when there are no current modals, so activate the modal node 
+				modalNode.style.display = "block";
+				bodyElement.style.overflow="hidden";
+				currentModal = modalNode;
+			}
+			
+			/*
+				if (modalNode.style && modalNode.style.display !== "block") {
+						modalNode.style.display = "block";
+						bodyElement.style.overflow="hidden";
+						currentModal = modalNode;
+				} else if (modalNode.style && modalNode.style.display == "block") {
+						modalNode.style.display = "none";
+						bodyElement.style.overflow="auto";
+						currentModal = null;
+				} 
+			*/
+		}
+	}
+			
+	function hashHandler() {
+		let locationHash = location.hash.slice(1).split("%20").join('').split('&').join('').split("'").join('');
+		let toggleNode = document.getElementById("modal-" + locationHash);
+		if (toggleNode !== currentModal) {
+			if (currentModal !== null) toggleModal(currentModal); // if a modal is currently active, turn it off before turning on another.
+			toggleModal(toggleNode);
+		}
+	}
+		
+	window.addEventListener('hashchange', hashHandler, false); 
+	
+/*
+	window.onclick = function(event) {  // this function is not needed right now but may be useful later to change the close modal functionality
+										// currently, there is a listener being built for every modal window. However, I could remove those listeners and just use this one single listener 
+										// for all of them
+				
+		if (event.target.id.startsWith("modal-") && event.target.style.display == "block") {
+			console.log("toggling:\t" + event.target);
+			toggleModal(event.target);
+		}
+	}
+*/
+	
 		</script>
 	</body>
 </html>
